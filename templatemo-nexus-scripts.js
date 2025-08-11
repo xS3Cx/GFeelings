@@ -320,9 +320,9 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(checkControllerSlide, 1000);
     
     // Initialize game icons after slider initialization
-    if (window.appStoreIconFetcher) {
+    if (window.localGameIcons) {
         setTimeout(() => {
-            window.appStoreIconFetcher.updateGameSlideImages();
+            window.localGameIcons.updateGameSlideImages();
         }, 1500);
     }
 
@@ -355,9 +355,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 updateGameDots();
                 
                 // Update game icons when switching to games view
-                if (window.appStoreIconFetcher) {
+                if (window.localGameIcons) {
                     setTimeout(() => {
-                        window.appStoreIconFetcher.updateGameSlideImages();
+                        window.localGameIcons.updateGameSlideImages();
                     }, 500);
                 }
                 
