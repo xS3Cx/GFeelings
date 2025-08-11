@@ -25,6 +25,7 @@ class AppStoreIconFetcher {
         this.cache = new Map();
         this.gameDataCache = new Map();
         this.baseUrl = 'https://itunes.apple.com/lookup';
+        this.proxyUrl = 'https://api.allorigins.win/raw?url=';
     }
 
     async fetchGameData(bundleId) {
@@ -34,6 +35,7 @@ class AppStoreIconFetcher {
         }
 
         try {
+            // Try direct API call first
             const response = await fetch(`${this.baseUrl}?bundleId=${bundleId}&country=us`);
             const data = await response.json();
             
@@ -68,7 +70,44 @@ class AppStoreIconFetcher {
             return null;
             
         } catch (error) {
-            console.error(`Error fetching data for ${bundleId}:`, error);
+            console.warn(`Direct API call failed for ${bundleId}, trying proxy...`, error);
+            
+            // Try proxy as fallback
+            try {
+                const proxyResponse = await fetch(`${this.proxyUrl}${encodeURIComponent(`${this.baseUrl}?bundleId=${bundleId}&country=us`)}`);
+                const proxyData = await proxyResponse.json();
+                
+                if (proxyData.results && proxyData.results.length > 0) {
+                    const app = proxyData.results[0];
+                    const gameData = {
+                        iconUrl: app.artworkUrl512 || app.artworkUrl256 || app.artworkUrl100,
+                        trackName: app.trackName,
+                        artistName: app.artistName,
+                        version: app.version,
+                        releaseDate: app.releaseDate,
+                        fileSizeBytes: app.fileSizeBytes,
+                        averageUserRating: app.averageUserRating,
+                        userRatingCount: app.userRatingCount,
+                        price: app.price,
+                        currency: app.currency,
+                        genres: app.genres,
+                        description: app.description,
+                        languageCodesISO2A: app.languageCodesISO2A,
+                        contentAdvisoryRating: app.contentAdvisoryRating,
+                        minimumOsVersion: app.minimumOsVersion,
+                        supportedDevices: app.supportedDevices,
+                        screenshotUrls: app.screenshotUrls,
+                        ipadScreenshotUrls: app.ipadScreenshotUrls
+                    };
+                    
+                    // Cache the result
+                    this.gameDataCache.set(bundleId, gameData);
+                    return gameData;
+                }
+            } catch (proxyError) {
+                console.error(`Proxy also failed for ${bundleId}:`, proxyError);
+            }
+            
             return null;
         }
     }
@@ -278,11 +317,13 @@ class AppStoreIconFetcher {
         };
         
         img.onerror = function() {
-            // Fallback to original icon if loading fails
-            imgElement.src = iconUrl;
-            imgElement.alt = `${gameName} Icon`;
-        };
+            console.warn(`Failed to load image for ${gameName}, using fallback`);
+            // Use fallback icon if image fails to load
+            imgElement.src = this.getFallbackIcon();
+            imgElement.alt = `${gameName} Icon (Fallback)`;
+        }.bind(this);
         
+        // Try to load the image
         img.src = iconUrl;
     }
 
@@ -296,13 +337,44 @@ class AppStoreIconFetcher {
         
         return await this.fetchGameIcon(bundleId);
     }
+
+    // Method to test API connectivity
+    async testAPIConnectivity() {
+        console.log('Testing App Store API connectivity...');
+        
+        try {
+            const testBundleId = 'com.apple.Pages';
+            const response = await fetch(`${this.baseUrl}?bundleId=${testBundleId}&country=us`);
+            
+            if (response.ok) {
+                console.log('✅ Direct API connection successful');
+                return true;
+            } else {
+                console.warn('⚠️ Direct API connection failed, will use proxy fallback');
+                return false;
+            }
+        } catch (error) {
+            console.warn('⚠️ Direct API connection failed, will use proxy fallback:', error);
+            return false;
+        }
+    }
+
+    // Method to initialize with connectivity test
+    async initialize() {
+        console.log('Initializing App Store Icon Fetcher...');
+        await this.testAPIConnectivity();
+        console.log('App Store Icon Fetcher initialized');
+    }
 }
 
 // Create global instance
 window.appStoreIconFetcher = new AppStoreIconFetcher();
 
 // Auto-update game icons when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', async function() {
+    // Initialize with connectivity test
+    await window.appStoreIconFetcher.initialize();
+    
     // Update game icons after a short delay to ensure sliders are initialized
     setTimeout(() => {
         window.appStoreIconFetcher.updateGameSlideImages();
