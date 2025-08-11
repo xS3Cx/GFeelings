@@ -6,11 +6,10 @@
     <meta name="theme-color" content="#000000">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>GoodFeelings - The Future of Team Collaboration</title>
+    <title>GoodFeelings - Guidance & Reconnaissance</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Audiowide&family=Chakra+Petch:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="(min-width: 769px)">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet" media="(max-width: 768px)">
     <link href="templatemo-nexus-style.css" rel="stylesheet">
-    <link rel="preload" href="gg.mp3" as="audio" type="audio/mpeg">
 <!--
 
 TemplateMo 594 nexus flow
@@ -20,1194 +19,488 @@ https://templatemo.com/tm-594-nexus-flow
 -->
 </head>
 <body id="top">
-    <!-- Enhanced Background Elements -->
-    <div class="cyber-bg">
-        <audio id="backgroundAudio" loop autoplay>
-            <source src="gg.mp3" type="audio/mpeg">
-        </audio>
-        <div class="cyber-gradient"></div>
-        <div class="matrix-rain" id="matrixRain"></div>
-        <div class="video-overlay"></div>
-    </div>
-    
-    <div class="particles" id="particlesContainer"></div>
-    
-    <div class="data-streams" id="dataStreams"></div>
-    
-    <div class="orb orb1"></div>
-    <div class="orb orb2"></div>
-    <div class="orb orb3"></div>
-    
-    <div class="grid-overlay">
-        <div class="grid-lines"></div>
-        <div class="grid-glow"></div>
-    </div>
-    
-    <div class="scanlines"></div>
-    <div class="noise-overlay"></div>
     
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
             <a href="#top" class="logo">GoodFeelings</a>
-            <ul class="nav-links">
-                <li><a href="#" class="btn-primary" id="reposBtn">
-                    <div class="wrapper">
-                        <span>REPOS</span>
-                        <div class="circle circle-1"></div>
-                        <div class="circle circle-2"></div>
-                        <div class="circle circle-3"></div>
-                        <div class="circle circle-4"></div>
-                        <div class="circle circle-5"></div>
-                        <div class="circle circle-6"></div>
-                        <div class="circle circle-7"></div>
-                        <div class="circle circle-8"></div>
-                        <div class="circle circle-9"></div>
-                        <div class="circle circle-10"></div>
-                        <div class="circle circle-11"></div>
-                        <div class="circle circle-12"></div>
-                    </div>
-                </a></li>
-                <li><a href="#" class="btn-secondary" id="sourcesBtn">
-                    <div class="wrapper">
-                        <span>SOURCES</span>
-                        <div class="circle circle-1"></div>
-                        <div class="circle circle-2"></div>
-                        <div class="circle circle-3"></div>
-                        <div class="circle circle-4"></div>
-                        <div class="circle circle-5"></div>
-                        <div class="circle circle-6"></div>
-                        <div class="circle circle-7"></div>
-                        <div class="circle circle-8"></div>
-                        <div class="circle circle-9"></div>
-                        <div class="circle circle-10"></div>
-                        <div class="circle circle-11"></div>
-                        <div class="circle circle-12"></div>
-                    </div>
-                </a></li>
-                <li><a href="#" class="btn-primary" id="tweaksBtn">
-                    <div class="wrapper">
-                        <span>TWEAKS</span>
-                        <div class="circle circle-1"></div>
-                        <div class="circle circle-2"></div>
-                        <div class="circle circle-3"></div>
-                        <div class="circle circle-4"></div>
-                        <div class="circle circle-5"></div>
-                        <div class="circle circle-6"></div>
-                        <div class="circle circle-7"></div>
-                        <div class="circle circle-8"></div>
-                        <div class="circle circle-9"></div>
-                        <div class="circle circle-10"></div>
-                        <div class="circle circle-11"></div>
-                        <div class="circle circle-12"></div>
-                    </div>
-                </a></li>
-                <li><a href="#" class="btn-secondary" id="moddingToolsBtn">
-                    <div class="wrapper">
-                        <span>MODDING TOOLS</span>
-                        <div class="circle circle-1"></div>
-                        <div class="circle circle-2"></div>
-                        <div class="circle circle-3"></div>
-                        <div class="circle circle-4"></div>
-                        <div class="circle circle-5"></div>
-                        <div class="circle circle-6"></div>
-                        <div class="circle circle-7"></div>
-                        <div class="circle circle-8"></div>
-                        <div class="circle circle-9"></div>
-                        <div class="circle circle-10"></div>
-                        <div class="circle circle-11"></div>
-                        <div class="circle circle-12"></div>
-                    </div>
-                </a></li>
-                <li><a href="#" class="btn-primary" id="modsBtn">
-                    <div class="wrapper">
-                        <span>MODS</span>
-                        <div class="circle circle-1"></div>
-                        <div class="circle circle-2"></div>
-                        <div class="circle circle-3"></div>
-                        <div class="circle circle-4"></div>
-                        <div class="circle circle-5"></div>
-                        <div class="circle circle-6"></div>
-                        <div class="circle circle-7"></div>
-                        <div class="circle circle-8"></div>
-                        <div class="circle circle-9"></div>
-                        <div class="circle circle-10"></div>
-                        <div class="circle circle-11"></div>
-                        <div class="circle circle-12"></div>
-                    </div>
-                </a></li>
-            </ul>
-            <button class="mobile-menu-button" id="mobileMenuBtn">
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <button class="supported-games-btn" id="supportedGamesBtn">
+                <div class="wrapper">
+                    <span>Supported Games</span>
+                    <div class="circle circle-1"></div>
+                    <div class="circle circle-2"></div>
+                    <div class="circle circle-3"></div>
+                    <div class="circle circle-4"></div>
+                    <div class="circle circle-5"></div>
+                    <div class="circle circle-6"></div>
+                    <div class="circle circle-7"></div>
+                    <div class="circle circle-8"></div>
+                    <div class="circle circle-9"></div>
+                    <div class="circle circle-10"></div>
+                    <div class="circle circle-11"></div>
+                    <div class="circle circle-12"></div>
                 </div>
             </button>
         </div>
     </nav>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu">
-        <div class="mobile-menu-header">
-            <a href="#top" class="mobile-menu-logo">GoodFeelings</a>
-            <button class="mobile-menu-close" id="mobileMenuClose">✕</button>
-        </div>
-
-        <nav class="mobile-menu-nav">
-            <ul>
-                <li><a href="#" class="btn-primary" id="mobileReposBtn">
-                    <div class="wrapper">
-                        <span>REPOS</span>
-                        <div class="circle circle-1"></div>
-                        <div class="circle circle-2"></div>
-                        <div class="circle circle-3"></div>
-                        <div class="circle circle-4"></div>
-                        <div class="circle circle-5"></div>
-                        <div class="circle circle-6"></div>
-                        <div class="circle circle-7"></div>
-                        <div class="circle circle-8"></div>
-                        <div class="circle circle-9"></div>
-                        <div class="circle circle-10"></div>
-                        <div class="circle circle-11"></div>
-                        <div class="circle circle-12"></div>
-                    </div>
-                </a></li>
-                <li><a href="#" class="btn-secondary" id="mobileSourcesBtn">
-                    <div class="wrapper">
-                        <span>SOURCES</span>
-                        <div class="circle circle-1"></div>
-                        <div class="circle circle-2"></div>
-                        <div class="circle circle-3"></div>
-                        <div class="circle circle-4"></div>
-                        <div class="circle circle-5"></div>
-                        <div class="circle circle-6"></div>
-                        <div class="circle circle-7"></div>
-                        <div class="circle circle-8"></div>
-                        <div class="circle circle-9"></div>
-                        <div class="circle circle-10"></div>
-                        <div class="circle circle-11"></div>
-                        <div class="circle circle-12"></div>
-                    </div>
-                </a></li>
-                <li><a href="#" class="btn-primary" id="mobileTweaksBtn">
-                    <div class="wrapper">
-                        <span>TWEAKS</span>
-                        <div class="circle circle-1"></div>
-                        <div class="circle circle-2"></div>
-                        <div class="circle circle-3"></div>
-                        <div class="circle circle-4"></div>
-                        <div class="circle circle-5"></div>
-                        <div class="circle circle-6"></div>
-                        <div class="circle circle-7"></div>
-                        <div class="circle circle-8"></div>
-                        <div class="circle circle-9"></div>
-                        <div class="circle circle-10"></div>
-                        <div class="circle circle-11"></div>
-                        <div class="circle circle-12"></div>
-                    </div>
-                </a></li>
-                <li><a href="#" class="btn-secondary" id="mobileModdingToolsBtn">
-                    <div class="wrapper">
-                        <span>MODDING TOOLS</span>
-                        <div class="circle circle-1"></div>
-                        <div class="circle circle-2"></div>
-                        <div class="circle circle-3"></div>
-                        <div class="circle circle-4"></div>
-                        <div class="circle circle-5"></div>
-                        <div class="circle circle-6"></div>
-                        <div class="circle circle-7"></div>
-                        <div class="circle circle-8"></div>
-                        <div class="circle circle-9"></div>
-                        <div class="circle circle-10"></div>
-                        <div class="circle circle-11"></div>
-                        <div class="circle circle-12"></div>
-                    </div>
-                </a></li>
-                <li><a href="#" class="btn-primary" id="mobileModsBtn">
-                    <div class="wrapper">
-                        <span>MODS</span>
-                        <div class="circle circle-1"></div>
-                        <div class="circle circle-2"></div>
-                        <div class="circle circle-3"></div>
-                        <div class="circle circle-4"></div>
-                        <div class="circle circle-5"></div>
-                        <div class="circle circle-6"></div>
-                        <div class="circle circle-7"></div>
-                        <div class="circle circle-8"></div>
-                        <div class="circle circle-9"></div>
-                        <div class="circle circle-10"></div>
-                        <div class="circle circle-11"></div>
-                        <div class="circle circle-12"></div>
-                    </div>
-                </a></li>
-            </ul>
-        </nav>
-    </div>
-
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-container" id="heroContent">
-            <h1 class="hero-title">
-                <span class="hero-nexus">Good<br>Feelings</span>
-            </h1>
-            <p class="hero-subtitle">Your go-to place for iOS modding. Find menu templates, trusted sources, essential tools, and useful tweaks to enhance your device experience.</p>
+                         <h1 class="hero-title">
+                 <span class="hero-nexus">Good<br>Feelings</span>
+             </h1>
+                             <p class="hero-subtitle">GoodFeelings is the most technically advanced and visually stunning cheat UI on iOS - we're absolutely certain of our superiority</p>
         </div>
         
-        <!-- Repositories Section (hidden by default) -->
-        <div class="repositories-section" id="repositoriesSection" style="display: none;">
-            <div class="repositories-container">
-                <div class="repositories-header">
-                    <h2>My GitHub Repositories</h2>
-                    <div class="filter-buttons">
-                        <button class="filter-btn active" data-filter="all">
-                            <div class="wrapper">
-                                <span>All</span>
-                                <div class="circle circle-1"></div>
-                                <div class="circle circle-2"></div>
-                                <div class="circle circle-3"></div>
-                                <div class="circle circle-4"></div>
-                                <div class="circle circle-5"></div>
-                                <div class="circle circle-6"></div>
-                                <div class="circle circle-7"></div>
-                                <div class="circle circle-8"></div>
-                                <div class="circle circle-9"></div>
-                                <div class="circle circle-10"></div>
-                                <div class="circle circle-11"></div>
-                                <div class="circle circle-12"></div>
-                            </div>
-                        </button>
-                        <button class="filter-btn" data-filter="forks">
-                            <div class="wrapper">
-                                <span>Forks</span>
-                                <div class="circle circle-1"></div>
-                                <div class="circle circle-2"></div>
-                                <div class="circle circle-3"></div>
-                                <div class="circle circle-4"></div>
-                                <div class="circle circle-5"></div>
-                                <div class="circle circle-6"></div>
-                                <div class="circle circle-7"></div>
-                                <div class="circle circle-8"></div>
-                                <div class="circle circle-9"></div>
-                                <div class="circle circle-10"></div>
-                                <div class="circle circle-11"></div>
-                                <div class="circle circle-12"></div>
-                            </div>
-                        </button>
-                        <button class="filter-btn" data-filter="me">
-                            <div class="wrapper">
-                                <span>Me</span>
-                                <div class="circle circle-1"></div>
-                                <div class="circle circle-2"></div>
-                                <div class="circle circle-3"></div>
-                                <div class="circle circle-4"></div>
-                                <div class="circle circle-5"></div>
-                                <div class="circle circle-6"></div>
-                                <div class="circle circle-7"></div>
-                                <div class="circle circle-8"></div>
-                                <div class="circle circle-9"></div>
-                                <div class="circle circle-10"></div>
-                                <div class="circle circle-11"></div>
-                                <div class="circle circle-12"></div>
-                            </div>
-                        </button>
-                    </div>
-                    <button class="back-btn" id="backToHome">
-                        <div class="wrapper">
-                            <span>Back to Home</span>
-                            <div class="circle circle-1"></div>
-                            <div class="circle circle-2"></div>
-                            <div class="circle circle-3"></div>
-                            <div class="circle circle-4"></div>
-                            <div class="circle circle-5"></div>
-                            <div class="circle circle-6"></div>
-                            <div class="circle circle-7"></div>
-                            <div class="circle circle-8"></div>
-                            <div class="circle circle-9"></div>
-                            <div class="circle circle-10"></div>
-                            <div class="circle circle-11"></div>
-                            <div class="circle circle-12"></div>
-                        </div>
-                    </button>
-                </div>
-                <div id="reposLoading" class="loading-spinner">
-                    <div class="spinner"></div>
-                    <p>Loading repositories...</p>
-                </div>
-                <div id="reposList" class="repos-grid"></div>
-            </div>
-        </div>
-
-        <!-- Tweaks Section (hidden by default) -->
-        <div class="tweaks-section" id="tweaksSection" style="display: none;">
-            <div class="tweaks-container">
-                <div class="tweaks-header">
-                    <h2>Essential iOS Tweaks</h2>
-                    <div class="filter-buttons">
-                        <button class="filter-btn active" data-filter="all">
-                            <div class="wrapper">
-                                <span>All</span>
-                                <div class="circle circle-1"></div>
-                                <div class="circle circle-2"></div>
-                                <div class="circle circle-3"></div>
-                                <div class="circle circle-4"></div>
-                                <div class="circle circle-5"></div>
-                                <div class="circle circle-6"></div>
-                                <div class="circle circle-7"></div>
-                                <div class="circle circle-8"></div>
-                                <div class="circle circle-9"></div>
-                                <div class="circle circle-10"></div>
-                                <div class="circle circle-11"></div>
-                                <div class="circle circle-12"></div>
-                            </div>
-                        </button>
-                        <button class="filter-btn" data-filter="bypass">
-                            <div class="wrapper">
-                                <span>Bypass</span>
-                                <div class="circle circle-1"></div>
-                                <div class="circle circle-2"></div>
-                                <div class="circle circle-3"></div>
-                                <div class="circle circle-4"></div>
-                                <div class="circle circle-5"></div>
-                                <div class="circle circle-6"></div>
-                                <div class="circle circle-7"></div>
-                                <div class="circle circle-8"></div>
-                                <div class="circle circle-9"></div>
-                                <div class="circle circle-10"></div>
-                                <div class="circle circle-11"></div>
-                                <div class="circle circle-12"></div>
-                            </div>
-                        </button>
-                        <button class="filter-btn" data-filter="game-tools">
-                            <div class="wrapper">
-                                <span>Game Tools</span>
-                                <div class="circle circle-1"></div>
-                                <div class="circle circle-2"></div>
-                                <div class="circle circle-3"></div>
-                                <div class="circle circle-4"></div>
-                                <div class="circle circle-5"></div>
-                                <div class="circle circle-6"></div>
-                                <div class="circle circle-7"></div>
-                                <div class="circle circle-8"></div>
-                                <div class="circle circle-9"></div>
-                                <div class="circle circle-10"></div>
-                                <div class="circle circle-11"></div>
-                                <div class="circle circle-12"></div>
-                            </div>
-                        </button>
-                        <button class="filter-btn" data-filter="other">
-                            <div class="wrapper">
-                                <span>Other</span>
-                                <div class="circle circle-1"></div>
-                                <div class="circle circle-2"></div>
-                                <div class="circle circle-3"></div>
-                                <div class="circle circle-4"></div>
-                                <div class="circle circle-5"></div>
-                                <div class="circle circle-6"></div>
-                                <div class="circle circle-7"></div>
-                                <div class="circle circle-8"></div>
-                                <div class="circle circle-9"></div>
-                                <div class="circle circle-10"></div>
-                                <div class="circle circle-11"></div>
-                                <div class="circle circle-12"></div>
-                            </div>
-                        </button>
-                    </div>
-                    <button class="back-btn" id="backToHomeFromTweaks">
-                        <div class="wrapper">
-                            <span>Back to Home</span>
-                            <div class="circle circle-1"></div>
-                            <div class="circle circle-2"></div>
-                            <div class="circle circle-3"></div>
-                            <div class="circle circle-4"></div>
-                            <div class="circle circle-5"></div>
-                            <div class="circle circle-6"></div>
-                            <div class="circle circle-7"></div>
-                            <div class="circle circle-8"></div>
-                            <div class="circle circle-9"></div>
-                            <div class="circle circle-10"></div>
-                            <div class="circle circle-11"></div>
-                            <div class="circle circle-12"></div>
-                        </div>
-                    </button>
-                </div>
-                <div id="tweaksList" class="tweaks-grid">
-                    <div class="tweak-card" style="animation-delay: 0.1s;" data-category="bypass">
-                        <a href="https://github.com/jjolano/shadow" target="_blank" class="tweak-name">Shadow</a>
-                        <p class="tweak-description">A jailbreak detection bypass for modern iOS jailbreaks. Essential for running apps that detect jailbreak.</p>
-                        <div class="tweak-meta">
-                            <span class="tweak-category">Jailbreak Bypass</span>
-                            <div class="tweak-stats">
-                                <div class="tweak-stat">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                    </svg>
-                                    911
-                                </div>
-                                <div class="tweak-stat">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                    </svg>
-                                    152
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tweak-card" style="animation-delay: 0.2s;" data-category="game-tools">
-                        <a href="https://igamegod.app/" target="_blank" class="tweak-name">iGameGod</a>
-                        <p class="tweak-description">iGameGod offers a variety of tools for you to use on your Non-Jailbroken (Jailed) or Jailbroken iPhone/iPad or Apple Silicon Mac!</p>
-                        <div class="tweak-meta">
-                            <span class="tweak-category">Game Tools</span>
-                            <div class="tweak-stats">
-                                <div class="tweak-stat">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                    </svg>
-                                    ∞
-                                </div>
-                                <div class="tweak-stat">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                    </svg>
-                                    ∞
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tweak-card" style="animation-delay: 0.6s;" data-category="game-tools">
-                        <a href="https://github.com/H5GG/H5GG" target="_blank" class="tweak-name">H5GG</a>
-                        <p class="tweak-description">An iOS Mod Engine with JavaScript APIs & HTML5 UI. Provides memory APIs similar to Android-GG's Lua APIs, supports script loading, dylib plugins, and custom UI creation. Perfect for game modification and memory manipulation.</p>
-                        <div class="tweak-meta">
-                            <span class="tweak-category">Mod Engine</span>
-                            <div class="tweak-stats">
-                                <div class="tweak-stat">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                    </svg>
-                                    716
-                                </div>
-                                <div class="tweak-stat">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                    </svg>
-                                    258
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tweak-card" style="animation-delay: 0.3s;" data-category="bypass">
-                        <a href="https://alias20.gitlab.io/apt/" target="_blank" class="tweak-name">vnodebypass</a>
-                        <p class="tweak-description">A powerful jailbreak detection bypass tool that uses vnode techniques to hide jailbreak from apps and games. Essential for running apps that detect jailbreak.</p>
-                        <div class="tweak-meta">
-                            <span class="tweak-category">Jailbreak Bypass</span>
-                            <div class="tweak-stats">
-                                <div class="tweak-stat">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                    </svg>
-                                    ∞
-                                </div>
-                                <div class="tweak-stat">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                    </svg>
-                                    ∞
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tweak-card" style="animation-delay: 0.4s;" data-category="other">
-                        <a href="https://opa334.github.io" target="_blank" class="tweak-name">Choicy</a>
-                        <p class="tweak-description">Choicy tweak is an advanced configurator for iOS tweaks that is sometimes misunderstood as a jailbreak detection bypass tool. In reality, it is more of a tool to restrict access to apps and tweaks, rather than granting access, which can help prevent crashes. It has recently been updated to support iOS 15 and iOS 16, and is now compatible with the Palera1n and XinaA15.</p>
-                        <div class="tweak-meta">
-                            <span class="tweak-category">Tweak Configurator</span>
-                            <div class="tweak-stats">
-                                <div class="tweak-stat">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                    </svg>
-                                    ∞
-                                </div>
-                                <div class="tweak-stat">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                    </svg>
-                                    ∞
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tweak-card" style="animation-delay: 0.5s;" data-category="other">
-                        <a href="https://github.com/NyaMisty/ssl-kill-switch3" target="_blank" class="tweak-name">SSL Kill Switch 3</a>
-                        <p class="tweak-description">Next Generation SSLKillSwitch with much more functionality! Disables SSL certificate validation and pinning, supports iOS 15+ with Fishhook and rootless jailbreaks. Essential for network analysis and security research.</p>
-                        <div class="tweak-meta">
-                            <span class="tweak-category">SSL Bypass</span>
-                            <div class="tweak-stats">
-                                <div class="tweak-stat">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                    </svg>
-                                    612
-                                </div>
-                                <div class="tweak-stat">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                    </svg>
-                                    79
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modding Tools Section (hidden by default) -->
-        <div class="modding-tools-section" id="moddingToolsSection" style="display: none;">
-            <div class="modding-tools-container">
-                <div class="modding-tools-header">
-                    <h2>iOS Modding Tools</h2>
-                    <div class="filter-buttons">
-                        <!-- Placeholder for future filter buttons if needed -->
-                    </div>
-                    <button class="back-btn" id="backToHomeFromModdingTools">
-                        <div class="wrapper">
-                            <span>Back to Home</span>
-                            <div class="circle circle-1"></div>
-                            <div class="circle circle-2"></div>
-                            <div class="circle circle-3"></div>
-                            <div class="circle circle-4"></div>
-                            <div class="circle circle-5"></div>
-                            <div class="circle circle-6"></div>
-                            <div class="circle circle-7"></div>
-                            <div class="circle circle-8"></div>
-                            <div class="circle circle-9"></div>
-                            <div class="circle circle-10"></div>
-                            <div class="circle circle-11"></div>
-                            <div class="circle circle-12"></div>
-                        </div>
-                    </button>
-                </div>
-                <div id="moddingToolsList" class="modding-tools-grid">
-                    <div class="modding-tool-card" style="animation-delay: 0.1s;">
-                        <a href="https://github.com/tien0246/IOS-Il2CppDumper" target="_blank" class="modding-tool-name">IOS-Il2CppDumper</a>
-                        <p class="modding-tool-description">Dump il2cpp data at runtime on iOS, can bypass protection, encryption and obfuscation. Essential for Unity game analysis and modding.</p>
-                        <div class="modding-tool-meta">
-                            <span class="modding-tool-category">Unity Dumper</span>
-                            <div class="modding-tool-stats">
-                                <div class="modding-tool-stat">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                    </svg>
-                                    44
-                                </div>
-                                <div class="modding-tool-stat">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                    </svg>
-                                    24
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modding-tool-card" style="animation-delay: 0.2s;">
-                        <a href="https://github.com/34306/unitydump-iOS" target="_blank" class="modding-tool-name">unitydump-iOS</a>
-                        <p class="modding-tool-description">An il2cppdumper application for iOS devices. Support both rootful and rootless jailbreaks. Perfect for Unity game analysis.</p>
-                        <div class="modding-tool-meta">
-                            <span class="modding-tool-category">Unity Dumper</span>
-                            <div class="modding-tool-stats">
-                                <div class="modding-tool-stat">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                    </svg>
-                                    90
-                                </div>
-                                <div class="modding-tool-stat">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                    </svg>
-                                    12
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modding-tool-card" style="animation-delay: 0.3s;">
-                        <a href="https://github.com/MJx0/iOS_UEDumper" target="_blank" class="modding-tool-name">iOS_UEDumper</a>
-                        <p class="modding-tool-description">Unreal Engine dumper for iOS devices. Extract game data, assets, and structures from Unreal Engine games for analysis and modding.</p>
-                        <div class="modding-tool-meta">
-                            <span class="modding-tool-category">Unreal Engine Dumper</span>
-                            <div class="modding-tool-stats">
-                                <div class="modding-tool-stat">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                    </svg>
-                                    ∞
-                                </div>
-                                <div class="modding-tool-stat">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                    </svg>
-                                    ∞
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Mods Section (hidden by default) -->
-        <div class="mods-section" id="modsSection" style="display: none;">
+        <!-- Mods Section (now the main content) -->
+        <div class="mods-section" id="modsSection">
             <div class="mods-container">
                 <div class="mods-header">
-                    <h2>Game Mods</h2>
-                    <div class="mods-buttons">
-                        <button class="mods-btn active" id="ourModsBtn">
-                            <div class="wrapper">
-                                <span>Our Mods</span>
-                                <div class="circle circle-1"></div>
-                                <div class="circle circle-2"></div>
-                                <div class="circle circle-3"></div>
-                                <div class="circle circle-4"></div>
-                                <div class="circle circle-5"></div>
-                                <div class="circle circle-6"></div>
-                                <div class="circle circle-7"></div>
-                                <div class="circle circle-8"></div>
-                                <div class="circle circle-9"></div>
-                                <div class="circle circle-10"></div>
-                                <div class="circle circle-11"></div>
-                                <div class="circle circle-12"></div>
+                    <h2 class="feature-header">Discover the possibilities we offer</h2>
+                    <h2 class="game-header">Supported games in our cheat</h2>
+                </div>
+                
+                <!-- Feature Slider -->
+                <div class="content-slider" id="featureSlider">
+                    <div class="slider-container">
+                        <div class="slider-track" id="featureSliderTrack">
+                            <!-- Slide 1: Advanced iOS Interface -->
+                            <div class="slider-slide feature-slide active" data-slide="1">
+                                <div class="slide-content">
+                                    <div class="slide-image">
+                                        <img src="menu2.png" alt="Advanced iOS Interface" class="mod-image">
+                                    </div>
+                                    <div class="slide-info">
+                                        <h3 class="slide-title">Advanced iOS Interface</h3>
+                                        <p class="slide-description">The most visually advanced and sophisticated menu interface on iOS, meticulously crafted using pure Objective-C programming language for optimal performance and seamless integration.</p>
+                                        <div class="slide-features">
+                                            <span class="feature-tag">Objective-C</span>
+                                            <span class="feature-tag">iOS Native</span>
+                                            <span class="feature-tag">Advanced UI</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            
+                            <!-- Slide 2: Controller Support -->
+                            <div class="slider-slide feature-slide" data-slide="2">
+                                <div class="slide-content">
+                                    <div class="slide-image">
+                                        <img src="Controller/controller.png" alt="Controller Support" class="mod-image controller-image fade-in" data-image="1">
+                                        <img src="Controller/controller2.png" alt="Controller Support" class="mod-image controller-image fade-out" data-image="2">
+                                    </div>
+                                    <div class="slide-info">
+                                        <h3 class="slide-title">Controller Support</h3>
+                                        <p class="slide-description">Full controller compatibility with advanced customization options. Features a comprehensive color menu system including Light mode and RGB Cycle effects for personalized gaming experience.</p>
+                                        <div class="slide-features">
+                                            <span class="feature-tag">Controller Support</span>
+                                            <span class="feature-tag">Light Mode</span>
+                                            <span class="feature-tag">RGB Cycle</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Slide 3: Theme Coloring -->
+                            <div class="slider-slide feature-slide" data-slide="3">
+                                <div class="slide-content">
+                                    <div class="slide-image">
+                                        <img src="theme/theme.jpg" alt="Theme Coloring" class="mod-image">
+                                    </div>
+                                    <div class="slide-info">
+                                        <h3 class="slide-title">Theme Coloring</h3>
+                                        <p class="slide-description">Extensive customization system with built-in gradient themes and intuitive sliders for complete color control. Personalize every aspect of the UI to match your preferences.</p>
+                                        <div class="slide-features">
+                                            <span class="feature-tag">Multiple Themes</span>
+                                            <span class="feature-tag">Custom RGB</span>
+                                            <span class="feature-tag">Personalization</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Slide 4: Toggle Personalization -->
+                            <div class="slider-slide feature-slide" data-slide="4">
+                                <div class="slide-content">
+                                    <div class="slide-image">
+                                        <img src="switches.jpg" alt="Toggle Personalization" class="mod-image">
+                                    </div>
+                                    <div class="slide-info">
+                                        <h3 class="slide-title">Toggle Personalization</h3>
+                                        <p class="slide-description">Customize toggle appearance with various visual styles and colors. Change the look of switches to match your interface preferences.</p>
+                                        <div class="slide-features">
+                                            <span class="feature-tag">Custom Toggles</span>
+                                            <span class="feature-tag">Visual Effects</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Slide 5: Animated Menu -->
+                            <div class="slider-slide feature-slide" data-slide="5">
+                                <div class="slide-content">
+                                    <div class="slide-image">
+                                        <img src="gif.jpg" alt="Animated Menu" class="mod-image">
+                                    </div>
+                                    <div class="slide-info">
+                                        <h3 class="slide-title">Animated Menu</h3>
+                                        <p class="slide-description">Enable menu animations (GIF) and manage blur effects. Customize the visual experience with dynamic animated backgrounds and adjustable blur settings.</p>
+                                        <div class="slide-features">
+                                            <span class="feature-tag">GIF Animations</span>
+                                            <span class="feature-tag">Blur Control</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Slide 6: Dark Mode | Light Mode -->
+                            <div class="slider-slide feature-slide" data-slide="6">
+                                <div class="slide-content">
+                                    <div class="slide-image">
+                                        <img src="mode/dmode.jpg" alt="Dark Mode | Light Mode" class="mod-image">
+                                    </div>
+                                    <div class="slide-info">
+                                        <h3 class="slide-title">Dark Mode | Light Mode</h3>
+                                        <p class="slide-description">Switch between light and dark themes to change the entire menu appearance. Choose your preferred interface style for optimal visual comfort.</p>
+                                        <div class="slide-features">
+                                            <span class="feature-tag">Dark Mode</span>
+                                            <span class="feature-tag">Light Mode</span>
+                                            <span class="feature-tag">Theme Switch</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Slide 7: Remote Access -->
+                            <div class="slider-slide feature-slide" data-slide="7">
+                                <div class="slide-content">
+                                    <div class="slide-image">
+                                        <img src="remote.jpg" alt="Remote Access" class="mod-image">
+                                    </div>
+                                    <div class="slide-info">
+                                        <h3 class="slide-title">Remote Access</h3>
+                                        <p class="slide-description">Connect remotely to our cheat UI through DEVICE_IP:8080 and gain remote access. Features live screen cheat UI for real-time monitoring without the game window, ability to take UI snapshots, perfect for external ESP drawing, radar, or direct device monitoring.</p>
+                                        <div class="slide-features">
+                                            <span class="feature-tag">Remote Connection</span>
+                                            <span class="feature-tag">Live Screen</span>
+                                            <span class="feature-tag">UI Snapshots</span>
+                                            <span class="feature-tag">External ESP</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Slide 8: Built-in IMGUI -->
+                            <div class="slider-slide feature-slide" data-slide="8">
+                                <div class="slide-content">
+                                    <div class="slide-image">
+                                        <img src="imgui.png" alt="Built-in IMGUI" class="mod-image imgui-image">
+                                    </div>
+                                    <div class="slide-info">
+                                        <h3 class="slide-title">Built-in IMGUI</h3>
+                                        <p class="slide-description">Built-in IMGUI integration provides additional capability to have IMGUI, ability to draw using IMGUI API, and direct simultaneous use of IMGUI with our cheat for enhanced UI development and rendering capabilities.</p>
+                                        <div class="slide-features">
+                                            <span class="feature-tag">IMGUI Integration</span>
+                                            <span class="feature-tag">Drawing API</span>
+                                            <span class="feature-tag">Direct Usage</span>
+                                            <span class="feature-tag">Enhanced UI</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Slide 9: Notifications -->
+                            <div class="slider-slide feature-slide" data-slide="9">
+                                <div class="slide-content">
+                                    <div class="slide-image">
+                                        <img src="notification.png" alt="Notifications" class="mod-image notification-image">
+                                    </div>
+                                    <div class="slide-info">
+                                        <h3 class="slide-title">Notifications</h3>
+                                        <p class="slide-description">Author's custom notifications system that alerts you about function activation/deactivation, along with function title and description. Features elegant modern in/out animations and dynamic positioning for optimal user experience.</p>
+                                        <div class="slide-features">
+                                            <span class="feature-tag">Custom Notifications</span>
+                                            <span class="feature-tag">Function Alerts</span>
+                                            <span class="feature-tag">Modern Animations</span>
+                                            <span class="feature-tag">Dynamic Positioning</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Feature Slider Navigation -->
+                    <div class="slider-navigation">
+                        <button class="slider-btn prev-btn" id="featurePrevBtn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                            </svg>
+                            Previous
                         </button>
-                        <button class="mods-btn" id="thirdPartyBtn">
-                            <div class="wrapper">
-                                <span>3rd Party</span>
-                                <div class="circle circle-1"></div>
-                                <div class="circle circle-2"></div>
-                                <div class="circle circle-3"></div>
-                                <div class="circle circle-4"></div>
-                                <div class="circle circle-5"></div>
-                                <div class="circle circle-6"></div>
-                                <div class="circle circle-7"></div>
-                                <div class="circle circle-8"></div>
-                                <div class="circle circle-9"></div>
-                                <div class="circle circle-10"></div>
-                                <div class="circle circle-11"></div>
-                                <div class="circle circle-12"></div>
-                            </div>
+                        
+                        <div class="slider-dots" id="featureSliderDots">
+                            <span class="dot feature-dot active" data-slide="1"></span>
+                            <span class="dot feature-dot" data-slide="2"></span>
+                            <span class="dot feature-dot" data-slide="3"></span>
+                            <span class="dot feature-dot" data-slide="4"></span>
+                            <span class="dot feature-dot" data-slide="5"></span>
+                            <span class="dot feature-dot" data-slide="6"></span>
+                            <span class="dot feature-dot" data-slide="7"></span>
+                            <span class="dot feature-dot" data-slide="8"></span>
+                            <span class="dot feature-dot" data-slide="9"></span>
+                        </div>
+                        
+                        <button class="slider-btn next-btn" id="featureNextBtn">
+                            Next
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                            </svg>
                         </button>
                     </div>
-                    <button class="back-btn" id="backToHomeFromMods">
-                        <div class="wrapper">
-                            <span>Back to Home</span>
-                            <div class="circle circle-1"></div>
-                            <div class="circle circle-2"></div>
-                            <div class="circle circle-3"></div>
-                            <div class="circle circle-4"></div>
-                            <div class="circle circle-5"></div>
-                            <div class="circle circle-6"></div>
-                            <div class="circle circle-7"></div>
-                            <div class="circle circle-8"></div>
-                            <div class="circle circle-9"></div>
-                            <div class="circle circle-10"></div>
-                            <div class="circle circle-11"></div>
-                            <div class="circle circle-12"></div>
-                        </div>
-                    </button>
                 </div>
-                <div id="ourModsContent" class="mods-content">
-                    <div class="mods-grid">
-                        <div class="mod-card" style="animation-delay: 0.1s;">
-                            <h3>Our Mods Coming Soon</h3>
-                            <p>We're working on amazing mods for popular games. Stay tuned!</p>
+                
+                <!-- Game Slider -->
+                <div class="content-slider" id="gameSlider" style="display: none;">
+                    <div class="slider-container">
+                        <div class="slider-track" id="gameSliderTrack">
+                            <!-- Game Slide 1: Combat Master -->
+                            <div class="slider-slide game-slide active" data-slide="1" data-game="Combat Master">
+                                <div class="slide-content">
+                                    <div class="game-left-section">
+                                        <div class="slide-image">
+                                            <img src="A887558F-F42D-4A52-9477-8F1BB511A729-removebg-preview.png" alt="Combat Master" class="mod-image">
+                                        </div>
+                                        <div class="game-details">
+                                            <div class="game-meta">
+                                                <!-- Game metadata will be populated dynamically from App Store API -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="game-right-section">
+                                        <div class="cheat-features">
+                                            <h4 class="features-title">Cheat Features</h4>
+                                            <div class="features-sections">
+                                                <div class="feature-section">
+                                                    <h5 class="section-title">ESP Features</h5>
+                                                    <ul class="features-list">
+                                                        <li>Detect Bot/Real</li>
+                                                        <li>Distance</li>
+                                                        <li>Health</li>
+                                                        <li>Draw Boxes</li>
+                                                        <li>Circle ESP</li>
+                                                        <li>Draw Lines</li>
+                                                        <li>Bone ESP</li>
+                                                        <li>Visible Check</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="feature-section">
+                                                    <h5 class="section-title">Combat Features</h5>
+                                                    <ul class="features-list">
+                                                        <li>Simple Aimbot</li>
+                                                        <li>Nearest Target</li>
+                                                        <li>Masskill</li>
+                                                        <li>Telekill</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="feature-section">
+                                                    <h5 class="section-title">Player Modifications</h5>
+                                                    <ul class="features-list">
+                                                        <li>Infinite Jump</li>
+                                                        <li>Infinite Ammo</li>
+                                                        <li>Infinite Armor</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="feature-section">
+                                                    <h5 class="section-title">Customization</h5>
+                                                    <ul class="features-list">
+                                                        <li>Box Types: Box, Box Filled, Corner, Pyramid</li>
+                                                        <li>Line Positions: Top, Center, Bottom</li>
+                                                        <li>Radar Size (100-300px)</li>
+                                                        <li>Player Points (6-20px)</li>
+                                                        <li>FOV World (0-200°)</li>
+                                                        <li>FOV Hands (60-120°)</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="feature-section">
+                                                    <h5 class="section-title">Utility</h5>
+                                                    <ul class="features-list">
+                                                        <li>Enable Radar</li>
+                                                        <li>Streamer Mode</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Game Slide 2: 1v1 LoL -->
+                            <div class="slider-slide game-slide" data-slide="2" data-game="1v1 LoL">
+                                <div class="slide-content">
+                                    <div class="game-left-section">
+                                        <div class="slide-image">
+                                            <img src="2AD0B64D-FC7A-4EC8-9961-824B1722B192-removebg-preview (1).png" alt="1v1 LoL" class="mod-image">
+                                        </div>
+                                        <div class="game-details">
+                                            <div class="game-meta">
+                                                <!-- Game metadata will be populated dynamically from App Store API -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="game-right-section">
+                                        <div class="slide-features">
+                                            <span class="feature-tag">Enemy ESP</span>
+                                            <span class="feature-tag">Enemy Line</span>
+                                            <span class="feature-tag">Enemy Box</span>
+                                            <span class="feature-tag">Visual Enhancement</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Game Slide 3: Guns of Boom -->
+                            <div class="slider-slide game-slide" data-slide="3" data-game="Guns of Boom">
+                                <div class="slide-content">
+                                    <div class="game-left-section">
+                                        <div class="slide-image">
+                                            <img src="4D2419FF-242C-4C75-ABD5-EC6278B6F09F-removebg-preview.png" alt="Guns of Boom" class="mod-image">
+                                        </div>
+                                        <div class="game-details">
+                                            <div class="game-meta">
+                                                <!-- Game metadata will be populated dynamically from App Store API -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="game-right-section">
+                                        <div class="slide-features">
+                                            <span class="feature-tag">Enhanced ESP</span>
+                                            <span class="feature-tag">Auto Aim</span>
+                                            <span class="feature-tag">No Recoil</span>
+                                            <span class="feature-tag">Rapid Fire</span>
+                                            <span class="feature-tag">Teleportation</span>
+                                            <span class="feature-tag">Radar System</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Game Slide 4: Kuboom -->
+                            <div class="slider-slide game-slide" data-slide="4" data-game="Kuboom">
+                                <div class="slide-content">
+                                    <div class="game-left-section">
+                                        <div class="slide-image">
+                                            <img src="A887558F-F42D-4A52-9477-8F1BB511A729-removebg-preview.png" alt="Kuboom" class="mod-image">
+                                        </div>
+                                        <div class="game-details">
+                                            <div class="game-meta">
+                                                <!-- Game metadata will be populated dynamically from App Store API -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="game-right-section">
+                                        <div class="slide-features">
+                                            <span class="feature-tag">Bot Detection</span>
+                                            <span class="feature-tag">Distance ESP</span>
+                                            <span class="feature-tag">Multiple Boxes</span>
+                                            <span class="feature-tag">Circle ESP</span>
+                                            <span class="feature-tag">Team ESP</span>
+                                            <span class="feature-tag">Line Types</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Game Slide 5: The Walking Zombies -->
+                            <div class="slider-slide game-slide" data-slide="5" data-game="The Walking Zombies">
+                                <div class="slide-content">
+                                    <div class="game-left-section">
+                                        <div class="slide-image">
+                                            <img src="2AD0B64D-FC7A-4EC8-9961-824B1722B192-removebg-preview (1).png" alt="The Walking Zombies" class="mod-image">
+                                        </div>
+                                        <div class="game-details">
+                                            <div class="game-meta">
+                                                <!-- Game metadata will be populated dynamically from App Store API -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="game-right-section">
+                                        <div class="slide-features">
+                                            <span class="feature-tag">Zombie ESP</span>
+                                            <span class="feature-tag">Zombie Highlight</span>
+                                            <span class="feature-tag">Zombie Radar</span>
+                                            <span class="feature-tag">Sound ESP</span>
+                                            <span class="feature-tag">Health Bars</span>
+                                            <span class="feature-tag">Customizable Range</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Game Slide 6: Hitman Blood Money -->
+                            <div class="slider-slide game-slide" data-slide="6" data-game="Hitman Blood Money">
+                                <div class="slide-content">
+                                    <div class="game-left-section">
+                                        <div class="slide-image">
+                                            <img src="4D2419FF-242C-4C75-ABD5-EC6278B6F09F-removebg-preview.png" alt="Hitman Blood Money" class="mod-image">
+                                        </div>
+                                        <div class="game-details">
+                                            <div class="game-meta">
+                                                <!-- Game metadata will be populated dynamically from App Store API -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="game-right-section">
+                                        <div class="cheat-features">
+                                            <h4 class="features-title">HITMAN BLOOD MONEY | CHEAT FEATURES | FOR: 1.0.0</h4>
+                                                                                         <div class="features-sections">
+                                                 <div class="feature-section">
+                                                     <h5 class="section-title">Weapon Modifications</h5>
+                                                     <ul class="features-list">
+                                                         <li>Unlimited Ammo</li>
+                                                         <li>No Fire Delay</li>
+                                                         <li>Firerate</li>
+                                                         <li>Set Ammo</li>
+                                                     </ul>
+                                                 </div>
+                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div id="thirdPartyContent" class="mods-content" style="display: none;">
-                    <div class="mods-grid">
-                        <div class="mod-card" style="animation-delay: 0.1s;">
-                            <a href="https://t.me/kamohacks" target="_blank" class="mod-name">KAMO HACKS</a>
-                            <p class="mod-description">Telegram channel with 179K+ subscribers offering IPA files, jailbreak tools, and iOS modifications. Official channel for iOS hacking community.</p>
-                            <div class="mod-meta">
-                                <span class="mod-category">Telegram Channel</span>
-                                <div class="mod-stats">
-                                    <div class="mod-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        179K+
-                                    </div>
-                                    <div class="mod-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                        </svg>
-                                        Official
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mod-card" style="animation-delay: 0.2s;">
-                            <a href="https://iosninja.io/ipa-library-ios" target="_blank" class="mod-name">iOS Ninja</a>
-                            <p class="mod-description">Comprehensive IPA library with jailbreak tools, tweaks, emulators, and utilities. Features categories for games, entertainment, social networking, and more.</p>
-                            <div class="mod-meta">
-                                <span class="mod-category">IPA Library</span>
-                                <div class="mod-stats">
-                                    <div class="mod-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        ∞
-                                    </div>
-                                    <div class="mod-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                        </svg>
-                                        Trusted
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mod-card" style="animation-delay: 0.3s;">
-                            <a href="https://www.ipauniverse.com/?srsltid=AfmBOop5rHrNoaCVQHoP4NnhN59wQ_fsuBOqkI7phiXDxyNqqi9UPKzA" target="_blank" class="mod-name">IPA Universe</a>
-                            <p class="mod-description">Daily updated iOS IPA apps and games library. Safe, fast, and free downloads with categories for photo & video, productivity, social networking, and education apps.</p>
-                            <div class="mod-meta">
-                                <span class="mod-category">IPA Store</span>
-                                <div class="mod-stats">
-                                    <div class="mod-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        Daily
-                                    </div>
-                                    <div class="mod-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                        </svg>
-                                        Updated
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mod-card" style="animation-delay: 0.4s;">
-                            <a href="https://iosgods.com/forum/80-free-non-jailbroken-ipa-cheats/" target="_blank" class="mod-name">iOSGods</a>
-                            <p class="mod-description">Leading community for free non-jailbroken IPA cheats and hacks. Features 5,600+ topics with game modifications, tweaks, and hacked apps for iOS devices.</p>
-                            <div class="mod-meta">
-                                <span class="mod-category">Cheat Community</span>
-                                <div class="mod-stats">
-                                    <div class="mod-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        5.6K+
-                                    </div>
-                                    <div class="mod-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                        </svg>
-                                        Topics
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Sources Section (hidden by default) -->
-        <div class="sources-section" id="sourcesSection" style="display: none;">
-            <div class="sources-container">
-                <div class="sources-header">
-                    <h2>Sources</h2>
-                    <div class="sources-buttons">
-                        <button class="btn-primary active" id="sourceCodeBtn">
-                            <div class="wrapper">
-                                <span>Source Code</span>
-                                <div class="circle circle-1"></div>
-                                <div class="circle circle-2"></div>
-                                <div class="circle circle-3"></div>
-                                <div class="circle circle-4"></div>
-                                <div class="circle circle-5"></div>
-                                <div class="circle circle-6"></div>
-                                <div class="circle circle-7"></div>
-                                <div class="circle circle-8"></div>
-                                <div class="circle circle-9"></div>
-                                <div class="circle circle-10"></div>
-                                <div class="circle circle-11"></div>
-                                <div class="circle circle-12"></div>
-                            </div>
+                    
+                    <!-- Game Slider Navigation -->
+                    <div class="slider-navigation">
+                        <button class="slider-btn prev-btn" id="gamePrevBtn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                            </svg>
+                            Previous
                         </button>
-                        <button class="btn-secondary" id="menusBtn">
-                            <div class="wrapper">
-                                <span>Menus</span>
-                                <div class="circle circle-1"></div>
-                                <div class="circle circle-2"></div>
-                                <div class="circle circle-3"></div>
-                                <div class="circle circle-4"></div>
-                                <div class="circle circle-5"></div>
-                                <div class="circle circle-6"></div>
-                                <div class="circle circle-7"></div>
-                                <div class="circle circle-8"></div>
-                                <div class="circle circle-9"></div>
-                                <div class="circle circle-10"></div>
-                                <div class="circle circle-11"></div>
-                                <div class="circle circle-12"></div>
-                            </div>
+                        
+                        <div class="slider-dots" id="gameSliderDots">
+                            <span class="dot game-dot active" data-slide="1"></span>
+                            <span class="dot game-dot" data-slide="2"></span>
+                            <span class="dot game-dot" data-slide="3"></span>
+                            <span class="dot game-dot" data-slide="4"></span>
+                            <span class="dot game-dot" data-slide="5"></span>
+                            <span class="dot game-dot" data-slide="6"></span>
+                        </div>
+                        
+                        <button class="slider-btn next-btn" id="gameNextBtn">
+                            Next
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                            </svg>
                         </button>
-                    </div>
-                    <button class="back-btn" id="backToHomeFromSources">
-                        <div class="wrapper">
-                            <span>Back to Home</span>
-                            <div class="circle circle-1"></div>
-                            <div class="circle circle-2"></div>
-                            <div class="circle circle-3"></div>
-                            <div class="circle circle-4"></div>
-                            <div class="circle circle-5"></div>
-                            <div class="circle circle-6"></div>
-                            <div class="circle circle-7"></div>
-                            <div class="circle circle-8"></div>
-                            <div class="circle circle-9"></div>
-                            <div class="circle circle-10"></div>
-                            <div class="circle circle-11"></div>
-                            <div class="circle circle-12"></div>
-                        </div>
-                    </button>
-                </div>
-                <div id="sourceCodeContent" class="sources-content">
-                    <div class="sources-grid">
-                        <div class="source-card" style="animation-delay: 0.1s;">
-                            <a href="https://github.com/Ezi06/esp-source-code-for-ios" target="_blank" class="source-name">esp-source-code-for-ios</a>
-                            <p class="source-description">Comprehensive ESP source code specifically designed for iOS devices. Features advanced ESP lines, player detection, and optimized performance for mobile gaming.</p>
-                            <div class="source-meta">
-                                <span class="source-category">iOS ESP Source</span>
-                                <div class="source-stats">
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        ∞
-                                    </div>
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                        </svg>
-                                        iOS Optimized
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="source-card" style="animation-delay: 0.2s;">
-                            <a href="https://github.com/busmanl30/ESP-Source" target="_blank" class="source-name">ESP-Source</a>
-                            <p class="source-description">ESP Lines and Source for any game. Public repository with 43 stars and 15 forks. Features ESP lines, health bar ESP, name ESP, and rainbow configs.</p>
-                            <div class="source-meta">
-                                <span class="source-category">ESP Framework</span>
-                                <div class="source-stats">
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        43
-                                    </div>
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                        </svg>
-                                        15
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="source-card" style="animation-delay: 0.3s;">
-                            <a href="https://github.com/shmoo419/ShadowgunLegendsAimbot" target="_blank" class="source-name">ShadowgunLegendsAimbot</a>
-                            <p class="source-description">Specialized aimbot source code for Shadowgun Legends iOS game. Features precise targeting algorithms, recoil compensation, and advanced aim assistance for FPS gaming.</p>
-                            <div class="source-meta">
-                                <span class="source-category">FPS Aimbot</span>
-                                <div class="source-stats">
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        ∞
-                                    </div>
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                        </svg>
-                                        FPS Game
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="source-card" style="animation-delay: 0.4s;">
-                            <a href="https://github.com/shmoo419/CriticalOpsAimbot" target="_blank" class="source-name">CriticalOpsAimbot</a>
-                            <p class="source-description">Advanced aimbot source code for Critical Ops iOS game. Features sophisticated targeting systems, weapon-specific adjustments, and competitive gaming optimizations.</p>
-                            <div class="source-meta">
-                                <span class="source-category">Competitive Aimbot</span>
-                                <div class="source-stats">
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        ∞
-                                    </div>
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                        </svg>
-                                        Competitive
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="source-card" style="animation-delay: 0.5s;">
-                            <a href="https://github.com/shmoo419/SniperArenaAimbot" target="_blank" class="source-name">SniperArenaAimbot</a>
-                            <p class="source-description">Specialized sniper aimbot for Sniper Arena iOS game. Features long-range targeting, bullet drop compensation, and precision shooting algorithms for sniper gameplay.</p>
-                            <div class="source-meta">
-                                <span class="source-category">Sniper Aimbot</span>
-                                <div class="source-stats">
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        ∞
-                                    </div>
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                        </svg>
-                                        Long Range
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="source-card" style="animation-delay: 0.6s;">
-                            <a href="https://github.com/xS3Cx/IOS-Amethyst-ESP-Unity-Template" target="_blank" class="source-name">IOS-Amethyst-ESP-Unity-Template</a>
-                            <p class="source-description">Simple ESP (Extra Sensory Perception) template for Unity mobile games. Features DobbyHook integration, Unity Framework, Core Graphics rendering, and memory optimization.</p>
-                            <div class="source-meta">
-                                <span class="source-category">Unity ESP Template</span>
-                                <div class="source-stats">
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        0
-                                    </div>
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                        </svg>
-                                        0
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="source-card" style="animation-delay: 0.7s;">
-                            <a href="https://github.com/Ragekill3377/Titanox" target="_blank" class="source-name">Titanox</a>
-                            <p class="source-description">Advanced iOS game modification framework with comprehensive features for Unity games. Includes memory manipulation, hooking systems, and UI components.</p>
-                            <div class="source-meta">
-                                <span class="source-category">Game Framework</span>
-                                <div class="source-stats">
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        ∞
-                                    </div>
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                        </svg>
-                                        Advanced
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="menusContent" class="sources-content" style="display: none;">
-                    <div class="sources-grid">
-                        <div class="source-card" style="animation-delay: 0.1s;">
-                            <a href="https://github.com/joeyjurjens/iOS-Mod-Menu-Template-for-Theos" target="_blank" class="source-name">iOS-Mod-Menu-Template-for-Theos</a>
-                            <p class="source-description">Comprehensive Mod Menu template for Theos with 202 stars and 81 forks. Features customizable UI, 4 types of switches (Offset Patcher, Empty, Textfield, Slider), compile-time string encryption, and KittyMemory integration.</p>
-                            <div class="source-meta">
-                                <span class="source-category">Theos Template</span>
-                                <div class="source-stats">
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        202
-                                    </div>
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                        </svg>
-                                        81
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="source-card" style="animation-delay: 0.2s;">
-                            <a href="https://github.com/Spoowy63/iOS-Encrypted-MMT" target="_blank" class="source-name">iOS-Encrypted-MMT</a>
-                            <p class="source-description">Encrypted Mod Menu Template with XOR encryption for enhanced security. Features 4 switch types, KittyMemory integration, and comprehensive documentation for iOS game modification.</p>
-                            <div class="source-meta">
-                                <span class="source-category">Encrypted Template</span>
-                                <div class="source-stats">
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        19
-                                    </div>
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                        </svg>
-                                        8
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="source-card" style="animation-delay: 0.3s;">
-                            <a href="https://github.com/xelahot/iOS-Mod-Menu-Base" target="_blank" class="source-name">iOS-Mod-Menu-Base</a>
-                            <p class="source-description">Base Mod Menu template for iOS with clean architecture and modular design. Perfect starting point for creating custom game modification menus with modern UI components.</p>
-                            <div class="source-meta">
-                                <span class="source-category">Base Template</span>
-                                <div class="source-stats">
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        ∞
-                                    </div>
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                        </svg>
-                                        Modular
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="source-card" style="animation-delay: 0.4s;">
-                            <a href="https://github.com/silentninjabee/iOS-ImGui-ModMenu-Template" target="_blank" class="source-name">iOS-ImGui-ModMenu-Template</a>
-                            <p class="source-description">ImGui-based Mod Menu template for iOS with modern UI framework integration. Features immediate mode GUI, customizable themes, and cross-platform compatibility for game modification interfaces.</p>
-                            <div class="source-meta">
-                                <span class="source-category">ImGui Template</span>
-                                <div class="source-stats">
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        ∞
-                                    </div>
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                        </svg>
-                                        Modern UI
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="source-card" style="animation-delay: 0.5s;">
-                            <a href="https://github.com/xS3Cx/IOS-GamePad-ModMenu" target="_blank" class="source-name">IOS-GamePad-ModMenu</a>
-                            <p class="source-description">iOS GamePad Mod Menu template with customizable UI, gesture controls, and modular design. Perfect for creating game modification menus with touch controls.</p>
-                            <div class="source-meta">
-                                <span class="source-category">GamePad Template</span>
-                                <div class="source-stats">
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        ∞
-                                    </div>
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                        </svg>
-                                        Touch UI
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="source-card" style="animation-delay: 0.6s;">
-                            <a href="https://github.com/xS3Cx/IOS-8BallPool-Aim-Assist-Lines" target="_blank" class="source-name">IOS-8BallPool-Aim-Assist-Lines</a>
-                            <p class="source-description">Specialized aim assist lines for 8 Ball Pool iOS game. Features precise aiming assistance, trajectory prediction, and customizable line styles for pool games.</p>
-                            <div class="source-meta">
-                                <span class="source-category">Aim Assist</span>
-                                <div class="source-stats">
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        ∞
-                                    </div>
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                        </svg>
-                                        Pool Game
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="source-card" style="animation-delay: 0.7s;">
-                            <a href="https://github.com/fahlnbg/FAHMenu-iOS-Mod-Menu" target="_blank" class="source-name">FAHMenu-iOS-Mod-Menu</a>
-                            <p class="source-description">Advanced Mod Menu template for Theos with 17 stars and 3 forks. Features 5 switch types (Offset, Memory, Multi-switch, Input, Slider), compile-time encryption, and IGG memory integration.</p>
-                            <div class="source-meta">
-                                <span class="source-category">Advanced Template</span>
-                                <div class="source-stats">
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        17
-                                    </div>
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                        </svg>
-                                        3
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="source-card" style="animation-delay: 0.8s;">
-                            <a href="https://drive.google.com/file/d/1HbRUJLzvwNv3eYicgC8iNBdU7HGvvWFH/view" target="_blank" class="source-name">shmoo's Mod Menu</a>
-                            <p class="source-description">Simple mod menu template by shmoo with basic features and clean design. Easy to use and customize for iOS game modification projects.</p>
-                            <div class="source-meta">
-                                <span class="source-category">Professional Template</span>
-                                <div class="source-stats">
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        ∞
-                                    </div>
-                                    <div class="source-stat">
-                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                        </svg>
-                                        Premium
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
 
     <!-- Footer -->
     <footer class="footer">
@@ -1218,6 +511,7 @@ https://templatemo.com/tm-594-nexus-flow
         </div>
     </footer>
 
+    <script src="appstore-icons.js"></script>
     <script src="templatemo-nexus-scripts.js"></script>
 </body>
 </html>
