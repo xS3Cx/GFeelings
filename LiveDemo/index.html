@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GF Mod Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;700;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dark-overlay"></div>
+    <div class="edge-cover"></div>
+    <div class="final-cover"></div>
+    
+    
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html" class="logo" id="topLogo">GoodFeelings</a>
+        </div>
+    </nav>
+    
+    <div class="menu-container">
+        
+        <div class="menu-button" id="menuButton" title="Click to open menu • Drag to move">
+            <div class="menu-icon"></div>
+        </div>
+
+        
+        <div class="menu" id="mainMenu">
+            
+            <div class="menu-header">
+                <div class="header-gif-bg"></div>
+                <div class="menu-icon-container">
+                    <div class="menu-icon-glow">
+                        <img id="menuLogo" width="50" height="50" alt="GF Logo">
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="menu-subheader">
+                <div class="version-label">v7.1.0</div>
+                <div class="main-menu-label" title="Click to go back">Main Menu</div>
+                <div class="counter-label">0/0</div>
+            </div>
+
+            
+            <div class="main-scroll-view" id="mainScrollView">
+                
+                <div class="sub-menu-item" data-submenu="0">
+                    <span class="sub-menu-text">Remote Server</span>
+                    <div class="sub-menu-arrow">▶</div>
+                </div>
+                <div class="sub-menu-item" data-submenu="1">
+                    <span class="sub-menu-text">Gamepad Menu</span>
+                    <div class="sub-menu-arrow">▶</div>
+                </div>
+                <div class="sub-menu-item" data-submenu="2">
+                    <span class="sub-menu-text">Theme Menu</span>
+                    <div class="sub-menu-arrow">▶</div>
+                </div>
+                <div class="sub-menu-item" data-submenu="3">
+                    <span class="sub-menu-text">Colors Menu</span>
+                    <div class="sub-menu-arrow">▶</div>
+                </div>
+                <div class="sub-menu-item" data-submenu="4">
+                    <span class="sub-menu-text">Toggle Styles Menu</span>
+                    <div class="sub-menu-arrow">▶</div>
+                </div>
+                <div class="sub-menu-item" data-submenu="5">
+                    <span class="sub-menu-text">Animation Menu</span>
+                    <div class="sub-menu-arrow">▶</div>
+                </div>
+                <div class="sub-menu-item" data-submenu="6">
+                    <span class="sub-menu-text">Configure Menu</span>
+                    <div class="sub-menu-arrow">▶</div>
+                </div>
+                <div class="sub-menu-item theme-toggle-item" id="themeToggleBtn">
+                    <span class="sub-menu-text">🌙 Light Mode</span>
+                    <div class="sub-menu-arrow">⚡</div>
+                </div>
+            </div>
+
+            
+            <div class="custom-scrollbar" id="mainScrollbar">
+                <div class="scrollbar-thumb"></div>
+                          </div>
+  
+              <div class="menu-footer">
+                <div class="footer-text">https://xs3cx.github.io/GFeelings/</div>
+                <div class="footer-gif-bg"></div>
+            </div>
+
+
+        </div>
+
+        <div class="content-scroll-view" id="contentScrollView">
+            
+            
+            <div class="submenu-content" data-submenu="0">
+                <div class="switch-item offset-switch" data-switch="remote_control">
+                    <div class="switch-label">Remote Control</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+            </div>
+
+            
+            <div class="submenu-content" data-submenu="1">
+                <div class="switch-item offset-switch" data-switch="controller_support">
+                    <div class="switch-label">Controller Support</div>
+                    <div class="switch-status">ON</div>
+                </div>
+            </div>
+
+            
+            <div class="submenu-content" data-submenu="2">
+                <div class="switch-item offset-switch" data-switch="sky">
+                    <div class="switch-label">Sky</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="slight_ocean_view">
+                    <div class="switch-label">Slight Ocean View</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="quepal">
+                    <div class="switch-label">Quepal</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="sublime_light">
+                    <div class="switch-label">Sublime Light</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="rainbow_blue">
+                    <div class="switch-label">Rainbow Blue</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="learning_and_leading">
+                    <div class="switch-label">Learning and Leading</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="pacific_dream">
+                    <div class="switch-label">Pacific Dream</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="black_rose">
+                    <div class="switch-label">Black Rosé</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="ali">
+                    <div class="switch-label">Ali</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="ukraine">
+                    <div class="switch-label">Ukraine</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="vasily">
+                    <div class="switch-label">Vasily</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="red_fire">
+                    <div class="switch-label">Red Fire</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item slider-switch" data-switch="custom_left">
+                    <div class="switch-label">Custom Left</div>
+                    <div class="switch-slider">
+                        <input type="range" min="0" max="255" value="35" class="slider-input">
+                    </div>
+                    <div class="switch-value">35</div>
+                </div>
+                <div class="switch-item slider-switch" data-switch="custom_right">
+                    <div class="switch-label">Custom Right</div>
+                    <div class="switch-slider">
+                        <input type="range" min="0" max="255" value="205" class="slider-input">
+                    </div>
+                    <div class="switch-value">205</div>
+                </div>
+            </div>
+
+            
+            <div class="submenu-content" data-submenu="3">
+                <div class="switch-item offset-switch" data-switch="red_color">
+                    <div class="switch-label">Red Color</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="green_color">
+                    <div class="switch-label">Green Color</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="blue_color">
+                    <div class="switch-label">Blue Color</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="yellow_color">
+                    <div class="switch-label">Yellow Color</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="purple_color">
+                    <div class="switch-label">Purple Color</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="cyan_color">
+                    <div class="switch-label">Cyan Color</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="white_color">
+                    <div class="switch-label">White Color</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="black_color">
+                    <div class="switch-label">Black Color</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item slider-switch" data-switch="custom_menu_color">
+                    <div class="switch-label">Custom Menu Color</div>
+                    <div class="switch-slider">
+                        <input type="range" min="0" max="255" value="128" class="slider-input">
+                    </div>
+                    <div class="switch-value">128</div>
+                </div>
+            </div>
+
+            
+            <div class="submenu-content" data-submenu="4">
+                <div class="switch-item offset-switch" data-switch="classic_switch">
+                    <div class="switch-label">Classic Switch</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="checkbox">
+                    <div class="switch-label">Checkbox</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="toggle">
+                    <div class="switch-label">Toggle</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="globe_switch">
+                    <div class="switch-label">Globe Switch</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="snowflake_switch">
+                    <div class="switch-label">Snowflake Switch</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="leaf_switch">
+                    <div class="switch-label">Leaf Switch</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="ant_switch">
+                    <div class="switch-label">Ant Switch</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="brain_switch">
+                    <div class="switch-label">Brain Switch</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+            </div>
+
+            
+            <div class="submenu-content" data-submenu="5">
+                <div class="switch-item offset-switch" data-switch="enable_animated_menu">
+                    <div class="switch-label">Enable Animated Menu</div>
+                    <div class="switch-status">ON</div>
+                </div>
+                <div class="switch-item function-selector" data-switch="animation_type" data-functions="Anime,Feel Good">
+                    <div class="switch-label">Animation Type</div>
+                    <div class="function-container">
+                        <div class="arrow-left">◀</div>
+                        <div class="function-value">Anime</div>
+                        <div class="arrow-right">▶</div>
+                    </div>
+                </div>
+                <div class="switch-item slider-switch" data-switch="gif_blur">
+                    <div class="switch-label">GIF Blur</div>
+                    <div class="switch-slider">
+                        <input type="range" min="0" max="10" value="0" class="slider-input">
+                    </div>
+                    <div class="switch-value">0</div>
+                </div>
+            </div>
+
+            
+            <div class="submenu-content" data-submenu="6">
+                <div class="switch-item slider-switch" data-switch="menu_width">
+                    <div class="switch-label">Menu Width</div>
+                    <div class="switch-slider">
+                        <input type="range" min="200" max="400" value="300" class="slider-input">
+                    </div>
+                    <div class="switch-value">300</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="light_mode">
+                    <div class="switch-label">Light Mode</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+                <div class="switch-item offset-switch" data-switch="imgui_integration">
+                    <div class="switch-label">ImGui Integration</div>
+                    <div class="switch-status">OFF</div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-bottom">
+                <p>&copy; 2025 GoodFeelings • All realities reserved • Made By AlexZero <3</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <svg width="0" height="0">
+        <defs>
+            <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#FF6B6B"/>
+                <stop offset="100%" style="stop-color:#4ECDC4"/>
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <script src="script.js"></script>
+</body>
+</html> 

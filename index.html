@@ -2,74 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#000000">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>GoodFeelings - Guidance & Reconnaissance</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Audiowide&family=Chakra+Petch:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="(min-width: 769px)">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet" media="(max-width: 768px)">
-    <link href="templatemo-nexus-style.css" rel="stylesheet">
-<!--
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/buttons.css" rel="stylesheet">
 
-TemplateMo 594 nexus flow
-
-https://templatemo.com/tm-594-nexus-flow
-
--->
 </head>
 <body id="top">
+    <div class="dark-overlay"></div>
+    <div class="edge-cover"></div>
+    <div class="final-cover"></div>
+    <div class="blur-preload"></div>
     
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <a href="#top" class="logo">GoodFeelings</a>
-            <button class="supported-games-btn" id="supportedGamesBtn">
-                <div class="wrapper">
-                    <span>Supported Games</span>
-                    <div class="circle circle-1"></div>
-                    <div class="circle circle-2"></div>
-                    <div class="circle circle-3"></div>
-                    <div class="circle circle-4"></div>
-                    <div class="circle circle-5"></div>
-                    <div class="circle circle-6"></div>
-                    <div class="circle circle-7"></div>
-                    <div class="circle circle-8"></div>
-                    <div class="circle circle-9"></div>
-                    <div class="circle circle-10"></div>
-                    <div class="circle circle-11"></div>
-                    <div class="circle circle-12"></div>
-                </div>
-            </button>
-        </div>
-    </nav>
+         
+     <nav>
+         <div class="nav-container">
+             <a href="#top" class="logo" id="topLogo">GoodFeelings</a>
+             
+             
+             <div class="desktop-nav">
+                 <button class="discover-btn" id="discoverBtn">
+                     <div class="wrapper">
+                         <span>Discover</span>
+                         <div class="circle circle-1"></div>
+                         <div class="circle circle-2"></div>
+                         <div class="circle circle-3"></div>
+                         <div class="circle circle-4"></div>
+                         <div class="circle circle-5"></div>
+                         <div class="circle circle-6"></div>
+                         <div class="circle circle-7"></div>
+                         <div class="circle circle-8"></div>
+                         <div class="circle circle-9"></div>
+                         <div class="circle circle-10"></div>
+                         <div class="circle circle-11"></div>
+                         <div class="circle circle-12"></div>
+                     </div>
+                 </button>
+                 <button class="live-demo-btn" id="liveDemoBtn">
+                     Live Demo
+                 </button>
+                 <button class="supported-games-btn" id="supportedGamesBtn">
+                     Supported Games
+                 </button>
+             </div>
+         </div>
+     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
+         
+     <section class="hero fade-in" id="heroSection">
         <div class="hero-container" id="heroContent">
-                         <h1 class="hero-title">
-                 <span class="hero-nexus">Good<br>Feelings</span>
-             </h1>
-                             <p class="hero-subtitle">GoodFeelings is the most technically advanced and visually stunning cheat UI on iOS - we're absolutely certain of our superiority</p>
+            <h1 class="hero-title">
+                <span class="hero-nexus">Good<br>Feelings</span>
+            </h1>
+            <p class="hero-subtitle">GoodFeelings is the most technically advanced and visually stunning cheat UI on iOS - we're absolutely certain of our superiority</p>
         </div>
-        
-        <!-- Mods Section (now the main content) -->
-        <div class="mods-section" id="modsSection">
+    </section>
+    
+    
+    <div class="mods-section" id="modsSection">
             <div class="mods-container">
+
                 <div class="mods-header">
                     <h2 class="feature-header">Discover the possibilities we offer</h2>
                     <h2 class="game-header">Supported games in our cheat</h2>
                 </div>
                 
-                <!-- Feature Slider -->
+                
                 <div class="content-slider" id="featureSlider">
                     <div class="slider-container">
                         <div class="slider-track" id="featureSliderTrack">
-                            <!-- Slide 1: Advanced iOS Interface -->
+                            
                             <div class="slider-slide feature-slide active" data-slide="1">
                                 <div class="slide-content">
                                     <div class="slide-image">
-                                        <img src="menu2.png" alt="Advanced iOS Interface" class="mod-image">
+                                        <img src="assets/images/ui/menu-advanced.png" alt="Advanced iOS Interface" class="mod-image">
                                     </div>
                                     <div class="slide-info">
                                         <h3 class="slide-title">Advanced iOS Interface</h3>
@@ -83,12 +94,12 @@ https://templatemo.com/tm-594-nexus-flow
                                 </div>
                             </div>
                             
-                            <!-- Slide 2: Controller Support -->
+                            
                             <div class="slider-slide feature-slide" data-slide="2">
                                 <div class="slide-content">
                                     <div class="slide-image">
-                                        <img src="Controller/controller.png" alt="Controller Support" class="mod-image controller-image fade-in" data-image="1">
-                                        <img src="Controller/controller2.png" alt="Controller Support" class="mod-image controller-image fade-out" data-image="2">
+                                        <img src="assets/images/ui/Controller/controller.png" alt="Controller Support" class="mod-image controller-image fade-in" data-image="1">
+                                        <img src="assets/images/ui/Controller/controller2.png" alt="Controller Support" class="mod-image controller-image fade-out" data-image="2">
                                     </div>
                                     <div class="slide-info">
                                         <h3 class="slide-title">Controller Support</h3>
@@ -102,11 +113,11 @@ https://templatemo.com/tm-594-nexus-flow
                                 </div>
                             </div>
                             
-                            <!-- Slide 3: Theme Coloring -->
+                            
                             <div class="slider-slide feature-slide" data-slide="3">
                                 <div class="slide-content">
                                     <div class="slide-image">
-                                        <img src="theme/theme.jpg" alt="Theme Coloring" class="mod-image">
+                                        <img src="assets/images/ui/theme/theme.png" alt="Theme Coloring" class="mod-image">
                                     </div>
                                     <div class="slide-info">
                                         <h3 class="slide-title">Theme Coloring</h3>
@@ -120,11 +131,11 @@ https://templatemo.com/tm-594-nexus-flow
                                 </div>
                             </div>
                             
-                            <!-- Slide 4: Toggle Personalization -->
+                            
                             <div class="slider-slide feature-slide" data-slide="4">
                                 <div class="slide-content">
                                     <div class="slide-image">
-                                        <img src="switches.jpg" alt="Toggle Personalization" class="mod-image">
+                                        <img src="assets/images/ui/toggles.png" alt="Toggle Personalization" class="mod-image">
                                     </div>
                                     <div class="slide-info">
                                         <h3 class="slide-title">Toggle Personalization</h3>
@@ -137,11 +148,11 @@ https://templatemo.com/tm-594-nexus-flow
                                 </div>
                             </div>
                             
-                            <!-- Slide 5: Animated Menu -->
+                            
                             <div class="slider-slide feature-slide" data-slide="5">
                                 <div class="slide-content">
                                     <div class="slide-image">
-                                        <img src="gif.jpg" alt="Animated Menu" class="mod-image">
+                                        <img src="assets/images/ui/animated-menu.png" alt="Animated Menu" class="mod-image">
                                     </div>
                                     <div class="slide-info">
                                         <h3 class="slide-title">Animated Menu</h3>
@@ -154,11 +165,11 @@ https://templatemo.com/tm-594-nexus-flow
                                 </div>
                             </div>
                             
-                            <!-- Slide 6: Dark Mode | Light Mode -->
+                            
                             <div class="slider-slide feature-slide" data-slide="6">
                                 <div class="slide-content">
                                     <div class="slide-image">
-                                        <img src="mode/dmode.jpg" alt="Dark Mode | Light Mode" class="mod-image">
+                                        <img src="assets/images/ui/mode/mode-switcher.png" alt="Dark Mode | Light Mode" class="mod-image">
                                     </div>
                                     <div class="slide-info">
                                         <h3 class="slide-title">Dark Mode | Light Mode</h3>
@@ -172,11 +183,11 @@ https://templatemo.com/tm-594-nexus-flow
                                 </div>
                             </div>
                             
-                            <!-- Slide 7: Remote Access -->
+                            
                             <div class="slider-slide feature-slide" data-slide="7">
                                 <div class="slide-content">
                                     <div class="slide-image">
-                                        <img src="remote.jpg" alt="Remote Access" class="mod-image">
+                                        <img src="assets/images/ui/remote-access.png" alt="Remote Access" class="mod-image">
                                     </div>
                                     <div class="slide-info">
                                         <h3 class="slide-title">Remote Access</h3>
@@ -191,11 +202,11 @@ https://templatemo.com/tm-594-nexus-flow
                                 </div>
                             </div>
                             
-                            <!-- Slide 8: Built-in IMGUI -->
+                            
                             <div class="slider-slide feature-slide" data-slide="8">
                                 <div class="slide-content">
                                     <div class="slide-image">
-                                        <img src="imgui.png" alt="Built-in IMGUI" class="mod-image imgui-image">
+                                        <img src="assets/images/ui/imgui-integration.png" alt="Built-in IMGUI" class="mod-image imgui-image">
                                     </div>
                                     <div class="slide-info">
                                         <h3 class="slide-title">Built-in IMGUI</h3>
@@ -210,11 +221,11 @@ https://templatemo.com/tm-594-nexus-flow
                                 </div>
                             </div>
                             
-                            <!-- Slide 9: Notifications -->
+                            
                             <div class="slider-slide feature-slide" data-slide="9">
                                 <div class="slide-content">
                                     <div class="slide-image">
-                                        <img src="notification.png" alt="Notifications" class="mod-image notification-image">
+                                        <img src="assets/images/ui/notifications.png" alt="Notifications" class="mod-image notification-image">
                                     </div>
                                     <div class="slide-info">
                                         <h3 class="slide-title">Notifications</h3>
@@ -231,15 +242,8 @@ https://templatemo.com/tm-594-nexus-flow
                         </div>
                     </div>
                     
-                    <!-- Feature Slider Navigation -->
+                    
                     <div class="slider-navigation">
-                        <button class="slider-btn prev-btn" id="featurePrevBtn">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-                            </svg>
-                            Previous
-                        </button>
-                        
                         <div class="slider-dots" id="featureSliderDots">
                             <span class="dot feature-dot active" data-slide="1"></span>
                             <span class="dot feature-dot" data-slide="2"></span>
@@ -252,25 +256,34 @@ https://templatemo.com/tm-594-nexus-flow
                             <span class="dot feature-dot" data-slide="9"></span>
                         </div>
                         
-                        <button class="slider-btn next-btn" id="featureNextBtn">
-                            Next
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
-                            </svg>
-                        </button>
+                        <div class="slider-buttons">
+                            <button class="slider-btn prev-btn" id="featurePrevBtn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                                </svg>
+                                Previous
+                            </button>
+                            
+                            <button class="slider-btn next-btn" id="featureNextBtn">
+                                Next
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- Game Slider -->
-                <div class="content-slider" id="gameSlider" style="display: none;">
+                
+                <div class="content-slider" id="gameSlider">
                     <div class="slider-container">
                         <div class="slider-track" id="gameSliderTrack">
-                            <!-- Game Slide 1: Combat Master -->
+                            
                             <div class="slider-slide game-slide active" data-slide="1" data-game="Combat Master">
                                 <div class="slide-content">
                                                                          <div class="game-left-section">
                                          <div class="slide-image">
-                                             <img src="game_icons/Combat_Master.jpg" alt="Combat Master" class="mod-image">
+                                             <img src="assets/images/games/game_icons/Combat_Master.jpg" alt="Combat Master" class="mod-image">
                                          </div>
                                          <div class="game-details">
                                              <h3 class="game-title">Combat Master</h3>
@@ -339,12 +352,12 @@ https://templatemo.com/tm-594-nexus-flow
                                 </div>
                             </div>
                             
-                            <!-- Game Slide 2: 1v1 LoL -->
+                            
                             <div class="slider-slide game-slide" data-slide="2" data-game="1v1 LoL">
                                 <div class="slide-content">
                                                                          <div class="game-left-section">
                                          <div class="slide-image">
-                                             <img src="game_icons/1v1_LoL.jpg" alt="1v1 LoL" class="mod-image">
+                                             <img src="assets/images/games/game_icons/1v1_LoL.jpg" alt="1v1 LoL" class="mod-image">
                                          </div>
                                          <div class="game-details">
                                              <h3 class="game-title">1v1 LoL</h3>
@@ -366,12 +379,12 @@ https://templatemo.com/tm-594-nexus-flow
                                 </div>
                             </div>
                             
-                            <!-- Game Slide 3: Guns of Boom -->
+                            
                             <div class="slider-slide game-slide" data-slide="3" data-game="Guns of Boom">
                                 <div class="slide-content">
                                                                          <div class="game-left-section">
                                          <div class="slide-image">
-                                             <img src="game_icons/Guns_of_Boom.jpg" alt="Guns of Boom" class="mod-image">
+                                             <img src="assets/images/games/game_icons/Guns_of_Boom.jpg" alt="Guns of Boom" class="mod-image">
                                          </div>
                                          <div class="game-details">
                                              <h3 class="game-title">Guns of Boom</h3>
@@ -395,12 +408,12 @@ https://templatemo.com/tm-594-nexus-flow
                                 </div>
                             </div>
                             
-                            <!-- Game Slide 4: Kuboom -->
+                            
                             <div class="slider-slide game-slide" data-slide="4" data-game="Kuboom">
                                 <div class="slide-content">
                                                                          <div class="game-left-section">
                                          <div class="slide-image">
-                                             <img src="game_icons/Kuboom.jpg" alt="Kuboom" class="mod-image">
+                                             <img src="assets/images/games/game_icons/Kuboom.jpg" alt="Kuboom" class="mod-image">
                                          </div>
                                          <div class="game-details">
                                              <h3 class="game-title">Kuboom</h3>
@@ -424,12 +437,12 @@ https://templatemo.com/tm-594-nexus-flow
                                 </div>
                             </div>
                             
-                            <!-- Game Slide 5: The Walking Zombies -->
+                            
                             <div class="slider-slide game-slide" data-slide="5" data-game="The Walking Zombies">
                                 <div class="slide-content">
                                                                          <div class="game-left-section">
                                          <div class="slide-image">
-                                             <img src="game_icons/The_Walking_Zombies.jpg" alt="The Walking Zombies" class="mod-image">
+                                             <img src="assets/images/games/game_icons/The_Walking_Zombies.jpg" alt="The Walking Zombies" class="mod-image">
                                          </div>
                                          <div class="game-details">
                                              <h3 class="game-title">The Walking Zombies</h3>
@@ -453,12 +466,12 @@ https://templatemo.com/tm-594-nexus-flow
                                 </div>
                             </div>
                             
-                            <!-- Game Slide 6: Hitman Blood Money -->
+                            
                             <div class="slider-slide game-slide" data-slide="6" data-game="Hitman Blood Money">
                                 <div class="slide-content">
                                                                          <div class="game-left-section">
                                          <div class="slide-image">
-                                             <img src="game_icons/Hitman_Blood_Money.jpg" alt="Hitman Blood Money" class="mod-image">
+                                             <img src="assets/images/games/game_icons/Hitman_Blood_Money.jpg" alt="Hitman Blood Money" class="mod-image">
                                          </div>
                                          <div class="game-details">
                                              <h3 class="game-title">Hitman Blood Money</h3>
@@ -490,15 +503,8 @@ https://templatemo.com/tm-594-nexus-flow
                         </div>
                     </div>
                     
-                    <!-- Game Slider Navigation -->
+                    
                     <div class="slider-navigation">
-                        <button class="slider-btn prev-btn" id="gamePrevBtn">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-                            </svg>
-                            Previous
-                        </button>
-                        
                         <div class="slider-dots" id="gameSliderDots">
                             <span class="dot game-dot active" data-slide="1"></span>
                             <span class="dot game-dot" data-slide="2"></span>
@@ -508,19 +514,28 @@ https://templatemo.com/tm-594-nexus-flow
                             <span class="dot game-dot" data-slide="6"></span>
                         </div>
                         
-                        <button class="slider-btn next-btn" id="gameNextBtn">
-                            Next
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
-                            </svg>
-                        </button>
+                        <div class="slider-buttons">
+                            <button class="slider-btn prev-btn" id="gamePrevBtn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                                </svg>
+                                Previous
+                            </button>
+                            
+                            <button class="slider-btn next-btn" id="gameNextBtn">
+                                Next
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
+    
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-bottom">
@@ -529,7 +544,7 @@ https://templatemo.com/tm-594-nexus-flow
         </div>
     </footer>
 
-    <script src="appstore-icons.js"></script>
-    <script src="templatemo-nexus-scripts.js"></script>
+    <script src="assets/js/game-icons.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
