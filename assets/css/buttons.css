@@ -5,7 +5,7 @@
     width: 7em;
     aspect-ratio: 1/0.25;
     color: white;
-    background: rgba(255, 255, 255, 0.1);
+    background: #2a2e35;
     background-size: cover;
     background-blend-mode: overlay;
     border-radius: 0.5em;
@@ -13,15 +13,21 @@
     border: 0;
     transition: all 0.3s ease-in-out;
     position: relative;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    box-shadow: none;
+    text-shadow: none;
   }
   
   .button:hover {
-    transform: scale(1.1);
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    transform: scale(1.05);
+    background: #32373f;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: none;
+    text-shadow: none;
   }
   
   .icon {
@@ -32,5 +38,6 @@
     left: 0;
     margin: auto;
     transform: translate(-35%, 10%);
+    filter: none;
   }
   
