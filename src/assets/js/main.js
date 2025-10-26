@@ -6,9 +6,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const heroLogo = document.getElementById('hero-logo');
     const navLogo = document.getElementById('nav-logo');
     
-    // Detect if we're in LiveDemo subdirectory
+    // Detect current page location
     const isLiveDemo = window.location.pathname.includes('/LiveDemo/');
-    const logoPath = isLiveDemo ? '../../assets/images/ui/logo.png' : '../assets/images/ui/logo.png';
+    const isDiscover = window.location.pathname.includes('/discover.html');
+    const isRoot = window.location.pathname === '/' || window.location.pathname.endsWith('/index.html');
+    
+    let logoPath;
+    if (isLiveDemo) {
+        logoPath = '../../assets/images/ui/logo.png';
+    } else if (isDiscover) {
+        logoPath = '../assets/images/ui/logo.png';
+    } else if (isRoot) {
+        logoPath = 'src/assets/images/ui/logo.png';
+    } else {
+        logoPath = 'src/assets/images/ui/logo.png';
+    }
     
     if (heroLogo) {
         heroLogo.src = logoPath;
