@@ -1,6 +1,6 @@
 let currentFeatureSlide = 0;
 let totalFeatureSlides = 0;
-let featureSliderTrack, featureSlides, featureDots, featurePrevBtn, featureNextBtn;
+let featureSliderTrack, featureSlides, featureDots;
 let isShowingSliders = false;
 document.addEventListener('DOMContentLoaded', function() {
     const heroLogo = document.getElementById('hero-logo');
@@ -47,8 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
     featureSliderTrack = document.getElementById('featureSliderTrack');
     featureSlides = document.querySelectorAll('.feature-slide');
     featureDots = document.querySelectorAll('.feature-dot');
-    featurePrevBtn = document.getElementById('featurePrevBtn');
-    featureNextBtn = document.getElementById('featureNextBtn');
     totalFeatureSlides = featureSlides.length;
     initFeatureSlider();
     setTimeout(() => {
@@ -97,12 +95,6 @@ document.addEventListener('DOMContentLoaded', function() {
         updateFeatureSlider();
         updateFeatureDots();
         setTimeout(checkControllerSlide, 500);
-    }
-    if (featureNextBtn) {
-        featureNextBtn.addEventListener('click', nextFeatureSlide);
-    }
-    if (featurePrevBtn) {
-        featurePrevBtn.addEventListener('click', prevFeatureSlide);
     }
     featureDots.forEach((dot, index) => {
         dot.addEventListener('click', () => goToFeatureSlide(index));
