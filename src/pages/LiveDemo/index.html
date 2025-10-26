@@ -6,29 +6,45 @@
     <title>GF Mod Menu</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;700;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="dark-overlay"></div>
-    <div class="edge-cover"></div>
-    <div class="final-cover"></div>
-    <div class="blur-preload"></div>
-    
-    
     <nav>
         <div class="nav-container">
-            <a href="../index.html" class="logo" id="topLogo">GoodFeelings</a>
+            <div class="logo-section">
+                <div class="logo">
+                    <img id="nav-logo" class="logo-icon" src="" alt="GoodFeelings Logo">
+                    <span class="logo-text">GoodFeelings™</span>
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <a href="../index.html" class="nav-button home-button">
+                    <i class="fas fa-home nav-button-icon"></i>
+                    <span class="nav-button-text">Home</span>
+                </a>
+            </div>
         </div>
     </nav>
-    
-    <div class="menu-container">
-        
-        <div class="menu-button" id="menuButton" title="Click to open menu • Drag to move">
-            <div class="menu-icon"></div>
+    <!-- Cyberpunk Layout Container -->
+    <div class="cyberpunk-layout">
+        <!-- Left Side - Title and Description -->
+        <div class="cyberpunk-left-panel">
+            <div class="cyberpunk-title-section">
+                <h1 class="cyberpunk-title">Live Demo</h1>
+                <div class="cyberpunk-subtitle">Advanced UI Interface</div>
+            </div>
+            <div class="cyberpunk-description-section">
+                <p class="cyberpunk-description">
+                    A provisional preview of our advanced user interface that faithfully replicates the appearance of our mod menu UI from iOS written in Objective-C. 
+                    This interactive prototype demonstrates our capabilities in creating modern, responsive 
+                    interfaces using the latest technologies and best practices in Objective-C.
+                </p>
+            </div>
         </div>
-
-        
+        <!-- Right Side - Menu -->
+        <div class="cyberpunk-right-panel">
+            <div class="menu-container">
         <div class="menu" id="mainMenu">
-            
             <div class="menu-header">
                 <div class="header-gif-bg"></div>
                 <div class="menu-icon-container">
@@ -37,17 +53,12 @@
                     </div>
                 </div>
             </div>
-
-            
             <div class="menu-subheader">
                 <div class="version-label">v7.1.0</div>
                 <div class="main-menu-label" title="Click to go back">Main Menu</div>
                 <div class="counter-label">0/0</div>
             </div>
-
-            
             <div class="main-scroll-view" id="mainScrollView">
-                
                 <div class="sub-menu-item" data-submenu="0">
                     <span class="sub-menu-text">Remote Server</span>
                     <div class="sub-menu-arrow">▶</div>
@@ -76,44 +87,28 @@
                     <span class="sub-menu-text">Configure Menu</span>
                     <div class="sub-menu-arrow">▶</div>
                 </div>
-                <div class="sub-menu-item theme-toggle-item" id="themeToggleBtn">
-                    <span class="sub-menu-text">🌙 Light Mode</span>
-                    <div class="sub-menu-arrow">⚡</div>
-                </div>
             </div>
-
-            
             <div class="custom-scrollbar" id="mainScrollbar">
                 <div class="scrollbar-thumb"></div>
                           </div>
-  
               <div class="menu-footer">
                 <div class="footer-text">https://xs3cx.github.io/GFeelings/</div>
                 <div class="footer-gif-bg"></div>
             </div>
-
-
         </div>
-
         <div class="content-scroll-view" id="contentScrollView">
-            
-            
             <div class="submenu-content" data-submenu="0">
                 <div class="switch-item offset-switch" data-switch="remote_control">
                     <div class="switch-label">Remote Control</div>
                     <div class="switch-status">OFF</div>
                 </div>
             </div>
-
-            
             <div class="submenu-content" data-submenu="1">
                 <div class="switch-item offset-switch" data-switch="controller_support">
                     <div class="switch-label">Controller Support</div>
                     <div class="switch-status">ON</div>
                 </div>
             </div>
-
-            
             <div class="submenu-content" data-submenu="2">
                 <div class="switch-item offset-switch" data-switch="sky">
                     <div class="switch-label">Sky</div>
@@ -178,8 +173,6 @@
                     <div class="switch-value">205</div>
                 </div>
             </div>
-
-            
             <div class="submenu-content" data-submenu="3">
                 <div class="switch-item offset-switch" data-switch="red_color">
                     <div class="switch-label">Red Color</div>
@@ -221,8 +214,6 @@
                     <div class="switch-value">128</div>
                 </div>
             </div>
-
-            
             <div class="submenu-content" data-submenu="4">
                 <div class="switch-item offset-switch" data-switch="classic_switch">
                     <div class="switch-label">Classic Switch</div>
@@ -257,8 +248,6 @@
                     <div class="switch-status">OFF</div>
                 </div>
             </div>
-
-            
             <div class="submenu-content" data-submenu="5">
                 <div class="switch-item offset-switch" data-switch="enable_animated_menu">
                     <div class="switch-label">Enable Animated Menu</div>
@@ -280,8 +269,6 @@
                     <div class="switch-value">0</div>
                 </div>
             </div>
-
-            
             <div class="submenu-content" data-submenu="6">
                 <div class="switch-item slider-switch" data-switch="menu_width">
                     <div class="switch-label">Menu Width</div>
@@ -299,21 +286,14 @@
                     <div class="switch-status">OFF</div>
                 </div>
             </div>
-        </div>
-
-
-    </div>
-
-    
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-bottom">
-                <p>&copy; 2025 GoodFeelings • All realities reserved • Made By AlexZero <3</p>
             </div>
         </div>
-    </footer>
-
-    
+    </div>
+    <div class="bottom-section">
+        <div class="copyright-container">
+            <div class="copyright">© 2025 GoodFeelings. All rights reserved.</div>
+        </div>
+    </div>
     <svg width="0" height="0">
         <defs>
             <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -322,7 +302,95 @@
             </linearGradient>
         </defs>
     </svg>
-
     <script src="script.js"></script>
+    <script>
+        function loadScript(src) {
+            return new Promise((resolve, reject) => {
+                const script = document.createElement('script');
+                script.src = src;
+                script.onload = resolve;
+                script.onerror = reject;
+                document.head.appendChild(script);
+            });
+        }
+        function initGradient() {
+            if (typeof Color4Bg !== 'undefined') {
+                if (Color4Bg.BlurGradientBg) {
+                    if (!document.body) {
+                        return false;
+                    }
+                    try {
+                        let gradient;
+                        try {
+                            gradient = new Color4Bg.BlurGradientBg({
+                                colors: ["#000000","#002e7a","#0042aa","#000000"],
+                                seed: 7209,
+                                loop: true
+                            });
+                        } catch(e1) {
+                            try {
+                                gradient = new Color4Bg.BlurGradientBg({
+                                    dom: document.querySelector('body'),
+                                    colors: ["#000000","#002e7a","#0042aa","#000000"],
+                                    seed: 7209,
+                                    loop: true
+                                });
+                            } catch(e2) {
+                                try {
+                                    gradient = new Color4Bg.BlurGradientBg({
+                                        dom: document.documentElement,
+                                        colors: ["#000000","#002e7a","#0042aa","#000000"],
+                                        seed: 7209,
+                                        loop: true
+                                    });
+                                } catch(e3) {
+                                    throw new Error("Wszystkie podejścia zawiodły");
+                                }
+                            }
+                        }
+                        return true;
+                    } catch(e) {
+                        return false;
+                    }
+                } else {
+                    return false;
+                }
+            } else {
+                return false;
+            }
+        }
+        window.addEventListener('load', async function() {
+            localStorage.removeItem('blurgradient_script');
+            localStorage.removeItem('blurgradient_script_version');
+            const sources = [
+                'https://raw.githubusercontent.com/xS3Cx/GoodFeelings-Repo/main/BlurGradientBg.min.js',
+                'https://cdn.jsdelivr.net/gh/xS3Cx/GoodFeelings-Repo@main/BlurGradientBg.min.js',
+                '../../lib/BlurGradientBg.min.js'
+            ];
+            for (let i = 0; i < sources.length; i++) {
+                const source = sources[i];
+                try {
+                    await loadScript(source);
+                    setTimeout(() => {
+                        if (initGradient()) {
+                            return;
+                        } else {
+                            setTimeout(() => {
+                                if (initGradient()) {
+                                    return;
+                                } else {
+                                }
+                            }, 1000);
+                        }
+                    }, 500);
+                    break;
+                } catch(error) {
+                    if (i === sources.length - 1) {
+                    }
+                }
+            }
+        });
+    </script>
+    <script src="../../assets/js/main.js"></script>
 </body>
 </html> 

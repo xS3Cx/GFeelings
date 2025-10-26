@@ -18,16 +18,10 @@
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: #1a1c21;
+    background: #000;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     overflow: hidden;
     position: relative;
-    
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
 }
 
 
@@ -49,207 +43,250 @@ nav {
     align-items: center;
 }
 
+.logo-section {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+    position: relative !important;
+    margin-left: 0 !important;
+    padding-left: 5px !important;
+}
+
 .logo {
-    font-family: 'Orbitron', monospace;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #ffffff;
-    text-decoration: none;
-    position: relative;
-    cursor: pointer;
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Orbitron', 'Rajdhani', 'Audiowide', 'Chakra Petch', sans-serif;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
 }
 
-.logo:hover {
-    transform: scale(1.05);
-}
-
-.logo::before {
+.nav-button::before {
     content: '';
-    width: 40px;
-    height: 40px;
-    background-image: url('https://i.ibb.co/xSR3YVNX/letter-gf-logo-design-initial-260nw-2254206063-removebg-preview.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 8px;
-    filter: saturate(0) brightness(1.2);
-    transition: all 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s ease;
 }
 
-.logo:hover::before {
-    transform: scale(1.1);
+.nav-button:hover::before {
+    left: 100%;
+}
+
+.nav-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.nav-button-icon {
+    font-size: 16px;
+}
+
+.nav-button-text {
+    font-family: 'Inter', sans-serif;
 }
 
 
-.footer {
-    padding: 20px 2rem;
-    text-align: center;
-    background: transparent;
+
+.bottom-section {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     z-index: 100;
 }
 
-.footer-content {
-    max-width: 1400px;
-    margin: 0 auto;
+.copyright-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
 }
 
-.footer-bottom {
+.copyright {
     color: rgba(255, 255, 255, 0.7);
-    font-size: 0.85rem;
-    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
     font-weight: 400;
+    text-align: center;
 }
 
-.footer-bottom p {
+
+
+/* Cyberpunk Layout */
+.cyberpunk-layout {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+}
+
+.cyberpunk-left-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 5% 0 10%;
+    position: relative;
+    z-index: 100;
+}
+
+.cyberpunk-right-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 200;
+}
+
+.cyberpunk-title-section {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.cyberpunk-title {
+    font-size: 4rem;
+    font-weight: 900;
+    color: white;
     margin: 0;
-    line-height: 1.4;
+    font-family: 'Orbitron', 'Rajdhani', 'Audiowide', 'Chakra Petch', sans-serif;
 }
 
-body::before {
-    content: '';
-    position: fixed;
-    top: -10%;
-    left: -10%;
-    width: 120%;
-    height: 120%;
-    background: #1a1c21;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    filter: none;
-    z-index: -2;
+.cyberpunk-subtitle {
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 10px;
+    font-weight: 600;
 }
 
-body::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #1a1c21;
-    mix-blend-mode: normal;
-    z-index: -1;
+.cyberpunk-description-section {
+    max-width: 500px;
+    position: relative;
 }
 
-
-.dark-overlay {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #1a1c21;
-    mix-blend-mode: normal;
-    z-index: -1;
-    pointer-events: none;
+.cyberpunk-description {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    position: relative;
 }
 
-.edge-cover {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #1a1c21;
-    mix-blend-mode: normal;
-    z-index: -1;
-    pointer-events: none;
-}
+/* Gradient line removed */
 
-.final-cover {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(26, 28, 33, 0.5);
-    z-index: 0;
-    pointer-events: none;
-}
-
+/* Animation removed - no longer needed */
 
 .menu-container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Old Live Demo styles removed - now using cyberpunk layout */
+
 
 .menu-button {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50px;
+    left: 50px;
     width: 50px;
     height: 50px;
     background: rgba(16, 16, 16, 0.8);
     border-radius: 15px;
+    cursor: grab;
+    transition: box-shadow 0.2s;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: grab;
-    border: none;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
-    z-index: 1000;
-    user-select: none;
-    overflow: hidden;
 }
 
-.menu-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('demo-animation.gif') center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-    z-index: 1;
-    opacity: 0.4;
-    filter: saturate(0);
-}
-
-.menu-button:hover {
-    transform: translate(-50%, -50%) scale(1.1);
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
-}
-
-.menu-button:hover::before {
-    opacity: 0.6;
+.menu-button:active {
+    cursor: grabbing;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 .menu-button .menu-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    z-index: 2;
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, var(--gradient-left) 0%, var(--gradient-right) 100%);
     border-radius: 15px;
     mask: url('logo.png') center center / 40px 40px no-repeat;
     -webkit-mask: url('logo.png') center center / 40px 40px no-repeat;
-    overflow: hidden;
+    position: relative;
+    z-index: 2;
 }
+
+
+/* SortableJS styles */
+.sortable-ghost {
+    opacity: 0.5;
+}
+
+.sortable-chosen {
+    cursor: grabbing !important;
+}
+
+.sortable-drag {
+    cursor: grabbing !important;
+    transform: rotate(5deg);
+}
+
 
 
 
@@ -262,12 +299,11 @@ body::after {
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    opacity: 0;
-    transform: scale(0.9);
+    opacity: 1;
+    transform: scale(1);
     transition: all 0.3s ease;
     z-index: 999;
-    pointer-events: none;
+    pointer-events: auto;
 }
 
 .menu.visible {
@@ -546,7 +582,6 @@ body::after {
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(101, 211, 99, 0.3);
     display: flex;
     align-items: center;
     padding: 5px 15px;
@@ -860,7 +895,6 @@ body::after {
 
 body.light-mode .menu,
 body.light-mode .content-scroll-view,
-body.light-mode .menu-button,
 body.light-mode .back-button,
 body.light-mode .info-bar,
 body.light-mode .custom-notification {
@@ -887,6 +921,26 @@ body.light-mode .custom-notification {
 
 
 @media (max-width: 768px) {
+    .live-demo-title-container {
+        margin-top: -150px;
+    }
+    
+    .live-demo-description-container {
+        margin-top: 250px;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    
+    .live-demo-title {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .live-demo-description {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
     .menu {
         width: 280px;
     }
@@ -896,8 +950,6 @@ body.light-mode .custom-notification {
     }
     
     .menu-button {
-        top: 10px;
-        right: 10px;
         width: 40px;
         height: 40px;
     }
@@ -1141,6 +1193,8 @@ body.light-mode .custom-notification {
 
 .custom-notification {
     position: fixed;
+    top: 20px;
+    right: 20px;
     width: 280px;
     z-index: 10000;
     cursor: pointer;
@@ -1219,6 +1273,15 @@ body.light-mode .custom-notification {
 
 
 @media (max-width: 768px) {
+    .nav-button {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    
+    .nav-button-icon {
+        font-size: 14px;
+    }
+    
     .custom-notification {
         width: 140px;
         right: 8px;
