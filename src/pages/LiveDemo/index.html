@@ -391,6 +391,22 @@
             }
         });
     </script>
-    <script src="../../assets/js/main.js"></script>
+    <script>
+        // Load logo from PNG
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLogo = document.getElementById('nav-logo');
+            const menuLogo = document.getElementById('menuLogo');
+            
+            if (navLogo) {
+                navLogo.src = 'logo.png';
+                console.log('Nav logo ustawione');
+            }
+            
+            if (menuLogo) {
+                menuLogo.src = 'logo.png';
+                console.log('Menu logo ustawione');
+            }
+        });
+    </script>
 </body>
 </html> 
